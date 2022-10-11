@@ -1,11 +1,12 @@
 #map {
     height: 400px;
-    /* The height is 400 pixels */
     width: 90%;
-   margin: 0 auto;
+    margin: 0 auto;
+    margin-top: 100px;
+   
   }
   .custom-map-control-button {
-    background-color: #fff;
+    background-color: var(--blanco-color);
     border: 0;
     border-radius: 2px;
     box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.3);
@@ -15,7 +16,10 @@
     overflow: hidden;
     height: 40px;
     cursor: pointer;
+    border-radius: 10px;
+    
   }
   .custom-map-control-button:hover {
-    background: rgb(235, 235, 235);
+    background-color: var(--gris4-color);
+    color: var(--blanco-color);
   }
