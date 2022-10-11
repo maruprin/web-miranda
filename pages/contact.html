@@ -62,7 +62,31 @@
             </div>
         </nav>
       </section>
-    <div id="map"></div>
+      <div class="map">
+        <button class="custom-map-control-button" id="location">
+            Find my actual location
+          </button>
+        <div class="map__wrap" id="map"></div>
+        <div class="map__search">
+          <div class="map__search-input">
+            <input
+              type="text"
+              placeholder="Put your address"
+              class="map__search-directionInput"
+              id="input-adress"
+            />
+            <button class="map__search-button" id="search-location">
+              Search
+            </button>
+          </div>
+        </div>
+        <button class="map__buttonNear" id="nearest">
+          Find my nearest location
+        </button>
+        <div class="map__results" id="results-wrap">
+          <ol id="results"></ol>
+        </div>
+      </div>
    
 </body>
 </html>
