@@ -1,4 +1,6 @@
 import hotels from "../data/hotelsUbication.js";
+import comunidadesEspana from "../data/comunidadesEspana.js";
+import comunidadesAutonomas from "../data/comunidadesAutonomas.js";
 let address;
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -32,7 +34,7 @@ function initMap() {
   const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
 
   //geolocalizacion
-  const currentPosition = []
+  const currentPosition = [];
   const locationButton = document.getElementById("location");
   map.controls[google.maps.ControlPosition.TOP_CENTER].push(locationButton);
   locationButton.addEventListener("click", () => {
@@ -66,13 +68,13 @@ function initMap() {
     );
     infoWindow.open(map);
   }
-  
-// encontrar ubicacion introducida en input 
-const geocoder = new google.maps.Geocoder();
+
+  // encontrar ubicacion introducida en input
+  const geocoder = new google.maps.Geocoder();
   const input = document.getElementById("input-adress");
   const button = document.getElementById("search-location");
   button.addEventListener("click", () => {
-   address = input.value;
+    address = input.value;
     geocoder.geocode({ address: address }, function (results, status) {
       const pos = results[0].geometry.location;
       infoWindow.setPosition(pos);
@@ -82,16 +84,15 @@ const geocoder = new google.maps.Geocoder();
     });
   });
 
-
   //locaciones cercanas
-  
+
   const nearestButton = document.getElementById("nearest");
   const wrap = document.getElementById("results-wrap");
   const results = document.getElementById("results");
 
   nearestButton.addEventListener("click", () => {
-    console.log('me aprieto')
-    console.log(currentPosition)
+    console.log("me aprieto");
+    console.log(currentPosition);
     wrap.classList.add("map__results-active");
     const destinations = hotels.map((hotel) => ({
       lat: hotel.lat,
@@ -115,7 +116,7 @@ const geocoder = new google.maps.Geocoder();
     } else {
       alert("Define your position");
     }
-  })
+  });
 
   function calculateDistance(origin, destinations) {
     var service = new google.maps.DistanceMatrixService();
@@ -139,12 +140,40 @@ const geocoder = new google.maps.Geocoder();
         sortedHotels.sort((a, b) => a.distance.value - b.distance.value);
         for (let hotel of sortedHotels) {
           const distance = document.createElement("li");
+          console.log(hotel);
           distance.innerText = `${hotel.name} - ${hotel.distance.text}`;
           document.getElementById("results").appendChild(distance);
         }
       });
   }
-  
+
+  // formas de comunidades autonomas
+  console.log(comunidadesAutonomas);
+  console.log(comunidadesEspana);
+
+  const selectCommunity = document.getElementById("comunidades-select");
+  comunidadesAutonomas.forEach((element, index) => {
+    let option = document.createElement("option");
+    option.value = index;
+    option.text = element;
+    selectCommunity.appendChild(option);
+  });
+
+  selectCommunity.addEventListener("change", (e) => {
+    let communityShape;
+    // Construct the polygon.
+    communityShape = new google.maps.Polygon({
+      paths: comunidadesEspana[e.target.selectedIndex],
+      strokeColor: "#329da8",
+      strokeOpacity: 1,
+      strokeWeight: 2,
+      fillColor: "#66b2ba",
+      fillOpacity: 0.8,
+    });
+console.log(google.maps)
+ communityShape.setMap(null)
+ communityShape.setMap(map);
+  });
 }
 
 window.initMap = initMap;

@@ -67,11 +67,23 @@
     border: 1px solid var(--gris4-color);
     color: var(--gris7-color);
     margin-top: 10px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   &__buttonNear:hover{
     background-color: var(--gris4-color);
     color: var(--blanco-color);
+  }
+  &__select{
+    display: block;
+    width: 290px;
+    height: 24px;
+    margin: 0 auto;
+    background-color: var(--gris1-color);
+    border-radius: 5px;
+    border: 1px solid var(--gris4-color);
+    color: var(--gris7-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   &__results {
     width:800px;
