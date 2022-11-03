@@ -105,17 +105,12 @@
     }
   
     &__food {
-        width: 70%;
-        height: 60vw;
-      background-color: black;
-  
-      margin-bottom: 12px; 
-  
+      width: 335px;
+      height: 335px;
+      background-color: var(--marron-color);
+      margin-bottom: 12px;
       position: relative;
       z-index: 100;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center;
     }
 
     &__feat {

@@ -16,30 +16,30 @@
         margin-bottom: 30px;
     }
 }
-
 .food-swiper {
-  margin-bottom: 120px;
-
-  position: relative;
+  margin-bottom: 110px;
+  //position: relative;
 
   &__button {
     // top = 100% + design margin + half button
-    top: calc(100% + 24px + 16px);
+    top: calc(1020% + 24px + 16px) !important;
 
     &--prev {
-      left: auto;
-      right: calc(32px + 16px);
+      width: 40px !important;
+      left: 215px !important;
     }
 
     &--next {
-      right: 0;
+      width: 40px !important;
+      right: 30px !important;
     }
 
     &.swiper-button-disabled {
-      background-color: white;
+      background-color: var(--gris2-color);
     }
   }
 }
+
 
 .food-images-swiper {
     text-align: center;
@@ -52,11 +52,6 @@
 }
 
 .food {
-// display: flex;
-// flex-direction: row;
-// flex-wrap: nowrap;
-// justify-content: space-between;
-// gap: 30px;
   @include mixins.flexbox(row, nowrap, space-between, 30px);
   align-items: center;
 
@@ -68,7 +63,9 @@
   &__h4 {
     font-size: 24px;
     line-height: 24px;
-
     margin-bottom: 12px;
+  }
+  &__p{
+    font-family: var(--archivo-font);
   }
 }
