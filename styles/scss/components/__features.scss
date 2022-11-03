@@ -1,0 +1,103 @@
+.features-container {
+    margin-bottom: 175px;
+    &__subtitle{
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 40px;
+    }
+    &__title{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &--dark {
+      color: white;
+      background-color: var(--gris7-color);
+  
+      padding: 48px 20px;
+      margin-bottom: 60px;
+  
+      & .feature {
+        background-color: black;
+  
+        margin-bottom: 12px;
+  
+        &__number {
+          color: black;
+          right: 12px;
+        }
+      }
+  
+      & .swiper-pagination-bullet {
+        background-color: black;
+        opacity: 1;
+      }
+    }
+    &__justificated{
+        margin-top: 40px;
+        text-align: center;
+    }
+  }
+  
+  .feature {
+    height: 360px;
+    width: 100%;
+    text-align: start;
+  
+    padding: 81px 38px;
+  
+    position: relative;
+  
+    &__icon {
+      width: 72px;
+      height: 72px;
+      background-position: center;
+      background-repeat: no-repeat;
+  
+      margin-bottom: 38px;
+  
+      position: relative;
+  
+      &--one {
+        background-image: url('/icons/features/icon-1.svg');
+      }
+  
+      &--two {
+        background-image: url('/icons/features/icon-2.svg');
+      }
+  
+      &--three {
+        background-image: url('/icons/features/icon-3.svg');
+      }
+  
+      &--four {
+        background-image: url('/icons/features/icon-4.svg');
+      }
+  
+      &--five {
+        background-image: url('/icons/features/icon-5.svg');
+      }
+  
+      &--six {
+        background-image: url('/icobs/features/icon-6.svg');
+      }
+    }
+  
+    &__number {
+      font-weight: 700;
+      font-size: 120px;
+      line-height: 130px;
+      color: rgba(34, 34, 34, 0.04);
+        font-family: var(--archivo-font);
+      position: absolute;
+      right: 32px;
+      top: 0;
+    }
+  
+    &__h4 {
+      margin-bottom: 28px;
+    }
+  
+    &__p {
+      margin-bottom: 33px;
+    }
+  }

@@ -1,0 +1,37 @@
+.stats{
+    background-color: var(--gris7-color);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    &__item{
+        width: 220px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    &__icon{
+        width: 70px;
+        height: 70px;
+    }
+    &__number{
+        color: white;
+        font-size: 60px;
+        line-height: 82px;
+        font-family: var(--roboto-font);
+        font-weight: bold;
+    }
+    &__plus{
+        color: white;
+        font-family: var(--roboto-font);
+        font-weight: bold;
+        font-size: 16px;
+line-height: 22px;
+    }
+    &__text{
+        color: var(--gris4-color);
+        font-family: var(--roboto-font);
+        font-weight: bold;
+        font-size: 16px;
+line-height: 22px;
+    }
+}

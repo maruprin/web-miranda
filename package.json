@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@googlemaps/markerclusterer": "^2.0.11"
+  },
+  "dependencies": {
+    "swiper": "^8.4.4"
   }
 }

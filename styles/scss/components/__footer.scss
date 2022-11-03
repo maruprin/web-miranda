@@ -1,0 +1,23 @@
+.footer{
+    font-family: var(--archivo-font);
+    margin-bottom: 30px;
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: -.48px;
+    &__textTop{
+        margin-bottom: 14px;
+        display: block;
+    }
+    &__textBottom{
+        &--a{
+            width: fit-content;
+            display: inline-block;
+        }
+        &--line{
+            display: inline-block;
+            margin: 0 5px;
+        }
+    }
+}

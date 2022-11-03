@@ -1,5 +1,19 @@
-@import "../scss/_maps";
-@import "../scss/_navbar";
-@import "../scss/_reset";
-@import "../scss/_variables";
-
+@import "../scss/components/_maps";
+@import "../scss/components/_navbar";
+@import "../scss/utils/_reset";
+@import "../scss/utils/_variables";
+@import "../scss/components/_iconbar";
+@import "../scss/utils/_mixins";
+@import '../scss/components/_swiper';
+@import '../scss/components/_facilities';
+@import '../scss/components/_features';
+@import "../scss/utils/_layout";
+@import "../scss/components/_presentation";
+@import "../scss/components/_arrival";
+@import "../scss/components/_aboutUS";
+@import "../scss/components/_rooms";
+@import "../scss/components/_video";
+@import "../scss/components/_menu";
+@import "../scss/components/_stats";
+@import "../scss/components/_preFooter";
+@import "../scss/components/_footer";

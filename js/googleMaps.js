@@ -2,9 +2,10 @@ import hotels from "../data/hotelsUbication.js";
 import comunidadesEspana from "../data/comunidadesEspana.js";
 import comunidadesAutonomas from "../data/comunidadesAutonomas.js";
 let address;
+let communityShape;
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
+    zoom: 5,
     center: { lat: 41.372232, lng: 2.071841 },
   });
   const icon = {
@@ -148,9 +149,6 @@ function initMap() {
   }
 
   // formas de comunidades autonomas
-  console.log(comunidadesAutonomas);
-  console.log(comunidadesEspana);
-
   const selectCommunity = document.getElementById("comunidades-select");
   comunidadesAutonomas.forEach((element, index) => {
     let option = document.createElement("option");
@@ -158,10 +156,13 @@ function initMap() {
     option.text = element;
     selectCommunity.appendChild(option);
   });
-
+  
   selectCommunity.addEventListener("change", (e) => {
-    let communityShape;
     // Construct the polygon.
+    if(communityShape){
+      communityShape.setMap(null);
+    }
+    
     communityShape = new google.maps.Polygon({
       paths: comunidadesEspana[e.target.selectedIndex],
       strokeColor: "#329da8",
@@ -170,9 +171,7 @@ function initMap() {
       fillColor: "#66b2ba",
       fillOpacity: 0.8,
     });
-console.log(google.maps)
- communityShape.setMap(null)
- communityShape.setMap(map);
+    communityShape.setMap(map);
   });
 }
 

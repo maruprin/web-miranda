@@ -1,0 +1,44 @@
+.rooms{
+    &__subtitle{
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    &__title{
+        padding: 20px;
+        text-align: center;
+    }
+    &__cardType{
+        width: 80%;
+        padding: 20px;
+        z-index: 100;
+        background: white;
+        width: 300px;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-top: -40px;
+        text-align: center;
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-family: var(--roboto-font);
+            color: var(--gris4-color);
+            margin-bottom: 20px;
+        }
+        &__priceContainer{
+            color: var(--marron-color);
+            font-weight: 700;
+            line-height: 43px;
+            font-family: var(--archivo-font);
+            margin-bottom: 60px;
+            &--price{
+                font-size: 32px;
+            }
+            &--night{
+                font-size: 13px;
+            } 
+        }
+
+    }
+}

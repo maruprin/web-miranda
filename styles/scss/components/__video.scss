@@ -1,0 +1,28 @@
+.video{
+    background-color: var(--gris7-color);
+    padding: 20px;
+    padding-top: 40px;
+    &__subtitle{
+        color: var(--marron-color);
+        margin-bottom: 20px;
+    }
+    &__title{
+        color: white;
+        margin-bottom: 20px;
+    }
+    &__text{
+        color: var(--gris2-color);
+        margin-bottom: -30px;
+    }
+    &__video-container video{
+        display: flex;
+        margin: auto;
+        width: 300px;
+        height: 300px;
+    }
+    &__btn{
+        margin-top: 30px;
+        color: white;
+        margin-bottom: 30px;
+    }
+}

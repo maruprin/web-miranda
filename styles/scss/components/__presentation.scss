@@ -1,0 +1,36 @@
+.presentation{
+    width: 100%;
+    margin-top: 70px;
+    background-color: var(--gris5-color);
+    color: var(--blanco-color);
+    padding: 20px;
+    &__subtitle{
+        color: var(--blanco-color) !important;
+        margin-bottom: 30px;
+    }
+    &__title{
+        
+        margin-bottom: 30px;
+    }
+    &__buttonsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-bottom: 40px;
+    }
+    &__btn{
+        width: 220px;
+        height: 50px;
+        border: 1.5px solid var(--gris4-color);
+        margin-bottom: 10px;
+        font-family: var(--archivo-font);
+        letter-spacing: 2.8px;
+        text-align: center;
+        cursor: pointer;
+        padding: 12px;
+        &:hover{
+            background-color: var(--marron-color);
+            border:1.5px solid var(--marron-color) ;
+        }
+    }
+}
