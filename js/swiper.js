@@ -1,8 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
 
-// import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-
 const roomsSwiper = new Swiper(".rooms-swiper", {
   spaceBetween: 20,
   centeredSlides: true,

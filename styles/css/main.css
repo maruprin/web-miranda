@@ -435,6 +435,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.swiper-300px {
+  height: 300px;
+}
+
 .swiper-pagination-bullet {
   width: 7px;
   height: 7px;
