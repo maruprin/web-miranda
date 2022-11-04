@@ -1,0 +1,38 @@
+
+.facts{
+    margin-bottom: 24px;
+    .fact{
+        padding: 25px 20px 28px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        gap: 14px;
+        align-items: center;
+      
+        &__icon{
+            width: 65px;
+            height: 65px;
+        }
+        &__text{
+            &--big{
+                font-family: "Old Standard TT";
+                font-size: 60px;
+                line-height: 60px;
+                letter-spacing: -1.8px;
+                display: block;
+            }
+            &--small{
+                font-size: 16px;
+                line-height: 16px;
+                color: #777777;
+                display: block;
+                font-family: var(--archivo-font);
+            }
+        }
+        &__arrow{
+            width: 32px;
+            height: 32px;
+            margin-left: auto;
+        }
+    }
+    }

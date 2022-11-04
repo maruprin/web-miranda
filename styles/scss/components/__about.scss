@@ -1,0 +1,72 @@
+@use "../utils/_mixins";
+.about-init{
+    &__video{
+        margin-bottom: 40px;
+    }
+    &__text{
+        font-family: "Old Standard TT";
+        font-size: 30px;
+        line-height: 37px;
+        letter-spacing: -1.16px;
+        text-align: center;
+        margin-bottom: 51px; 
+        hyphens: none;
+    }
+    &__amenities{
+@include mixins.flexbox(row, wrap, center, 0px);
+        .about-amenities{
+        width: 158px;
+        height: 158px;
+        text-align: center;
+        color: #222222;
+        padding: 43px 0 40px;
+        &:hover{
+            color: white;
+            background-color: #bead8e;
+            & .about-amenities__icon--break {
+                background-image: url('/icons/about/breakfast-white.webp');
+              }
+          
+              & .about-amenities__icon--plane {
+                background-image: url('/icons/about/plane-white.svg');
+              }
+          
+              & .about-amenities__icon--ubi {
+                background-image: url('/icons/about/map-white.svg');
+              }
+          
+              & .about-amenities__icon--room {
+                background-image: url('/icons/about/room-white.svg');
+              }
+        }
+        &__icon{
+            width: 60px;
+            height: 60px;
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            margin: 0 auto 12px auto;
+            &--break{
+                background-image: url(/icons/about/breakfast.svg);
+            }
+            &--plane{
+                background-image: url(/icons/about/plane.png);
+            }
+            &--ubi{
+                background-image: url(/icons/about/map.svg);
+            }
+            &--room{
+                background-image: url(/icons/about/room.svg);
+            }
+        }
+        &__text{
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 700;
+            letter-spacing: 2.4px;
+            font-family: var(--archivo-font);
+        }
+    }
+    }
+    
+}

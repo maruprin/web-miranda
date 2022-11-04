@@ -435,11 +435,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.swiper {
-  width: 100%;
-  height: 300px;
-}
-
 .swiper-pagination-bullet {
   width: 7px;
   height: 7px;
@@ -516,8 +511,6 @@ body {
   width: 70%;
   height: 60vw;
   background-color: black;
-  position: relative;
-  z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -541,10 +534,17 @@ body {
 .swiper-slide__fact {
   width: 335px;
   height: 230px;
-  background-color: grey;
+  background-color: black;
   margin-bottom: 12px;
   position: relative;
   z-index: 100;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.facts__justificated {
+  text-align: center;
 }
 
 .facilities {
@@ -560,7 +560,6 @@ body {
 .features-container__subtitle {
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 40px;
 }
 .features-container__title {
   text-align: center;
@@ -573,16 +572,19 @@ body {
   margin-bottom: 60px;
 }
 .features-container--dark .feature {
-  background-color: black;
+  background-color: var(--gris6-color);
   margin-bottom: 12px;
 }
 .features-container--dark .feature__number {
-  color: black;
+  color: var(--gris7-color);
   right: 12px;
 }
 .features-container--dark .swiper-pagination-bullet {
-  background-color: black;
+  background-color: var(--gris6-color);
   opacity: 1;
+}
+.features-container--dark .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--marron-color);
 }
 .features-container__justificated {
   margin-top: 40px;
@@ -620,7 +622,7 @@ body {
   background-image: url("/icons/features/icon-5.svg");
 }
 .feature__icon--six {
-  background-image: url("/icobs/features/icon-6.svg");
+  background-image: url("/icons/features/icon-6.svg");
 }
 .feature__number {
   font-weight: 700;
@@ -636,6 +638,7 @@ body {
   margin-bottom: 28px;
 }
 .feature__p {
+  font-family: var(--archivo-font);
   margin-bottom: 33px;
 }
 
@@ -675,32 +678,38 @@ body {
 
 .buttonS {
   width: 220px;
-  height: 50px;
+  height: 60px;
   border: 1.5px solid var(--gris4-color);
   margin-bottom: 10px;
   font-family: var(--archivo-font);
   letter-spacing: 2.8px;
   text-align: center;
   cursor: pointer;
-  padding: 12px;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .buttonS:hover {
+  color: white;
   background-color: var(--marron-color);
   border: 1.5px solid var(--marron-color);
 }
 
 .buttonM {
   width: 250px;
-  height: 50px;
+  height: 60px;
   border: 1.5px solid var(--gris4-color);
   margin-bottom: 10px;
   font-family: var(--archivo-font);
   letter-spacing: 2.8px;
   text-align: center;
   cursor: pointer;
-  padding: 12px;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .buttonM:hover {
+  color: white;
   background-color: var(--marron-color);
   border: 1.5px solid var(--marron-color);
 }
@@ -739,6 +748,8 @@ body {
   background-color: var(--gris5-color);
   color: var(--blanco-color);
   padding: 20px;
+  padding-top: 50px;
+  padding-bottom: 70px;
 }
 .presentation__subtitle {
   color: var(--blanco-color) !important;
@@ -749,24 +760,9 @@ body {
 }
 .presentation__buttonsContainer {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-bottom: 40px;
-}
-.presentation__btn {
-  width: 220px;
-  height: 50px;
-  border: 1.5px solid var(--gris4-color);
-  margin-bottom: 10px;
-  font-family: var(--archivo-font);
-  letter-spacing: 2.8px;
-  text-align: center;
-  cursor: pointer;
-  padding: 12px;
-}
-.presentation__btn:hover {
-  background-color: var(--marron-color);
-  border: 1.5px solid var(--marron-color);
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  gap: 20px;
 }
 
 .arrival {
@@ -1203,4 +1199,206 @@ body {
 .footer__textBottom--line {
   display: inline-block;
   margin: 0 5px;
+}
+
+.breadcrumb {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.5px;
+  padding: 16px 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+}
+.breadcrumb__a {
+  display: inline;
+}
+.breadcrumb__line {
+  margin: 0 10px;
+}
+.breadcrumb__current {
+  color: var(--marron-color);
+}
+
+.section {
+  margin-bottom: 40px;
+  position: relative;
+}
+.section--justified {
+  text-align: center;
+}
+.section--dark {
+  background-color: var(--gris7-color);
+  color: white;
+}
+.section--marg0 {
+  margin: 0;
+}
+.section__h2 {
+  margin-bottom: 24px;
+}
+.section__h2--dark {
+  color: white;
+}
+.section__h3 {
+  margin-bottom: 16px;
+}
+.section__p {
+  color: var(--gris4-color);
+  margin-bottom: 24px;
+}
+.section__p--dark {
+  color: var(--gris7-color);
+}
+
+.about-init__video {
+  margin-bottom: 40px;
+}
+.about-init__text {
+  font-family: "Old Standard TT";
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -1.16px;
+  text-align: center;
+  margin-bottom: 51px;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+.about-init__amenities {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0px;
+}
+.about-init__amenities .about-amenities {
+  width: 158px;
+  height: 158px;
+  text-align: center;
+  color: #222222;
+  padding: 43px 0 40px;
+}
+.about-init__amenities .about-amenities:hover {
+  color: white;
+  background-color: #bead8e;
+}
+.about-init__amenities .about-amenities:hover .about-amenities__icon--break {
+  background-image: url("/icons/about/breakfast-white.webp");
+}
+.about-init__amenities .about-amenities:hover .about-amenities__icon--plane {
+  background-image: url("/icons/about/plane-white.svg");
+}
+.about-init__amenities .about-amenities:hover .about-amenities__icon--ubi {
+  background-image: url("/icons/about/map-white.svg");
+}
+.about-init__amenities .about-amenities:hover .about-amenities__icon--room {
+  background-image: url("/icons/about/room-white.svg");
+}
+.about-init__amenities .about-amenities__icon {
+  width: 60px;
+  height: 60px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 auto 12px auto;
+}
+.about-init__amenities .about-amenities__icon--break {
+  background-image: url(/icons/about/breakfast.svg);
+}
+.about-init__amenities .about-amenities__icon--plane {
+  background-image: url(/icons/about/plane.png);
+}
+.about-init__amenities .about-amenities__icon--ubi {
+  background-image: url(/icons/about/map.svg);
+}
+.about-init__amenities .about-amenities__icon--room {
+  background-image: url(/icons/about/room.svg);
+}
+.about-init__amenities .about-amenities__text {
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  font-family: var(--archivo-font);
+}
+
+.restaurant-card {
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.5);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.restaurant-card__img {
+  width: 350px;
+  height: 232px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 30px;
+}
+.restaurant-card__subtitle {
+  margin-bottom: 20px;
+}
+.restaurant-card__title {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -1.05px;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  margin-bottom: 30px;
+}
+.restaurant-card__text {
+  font-family: var(--archivo-font);
+  color: var(--gris4-color);
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+.restaurant-card__btn {
+  color: white;
+  background-color: var(--marron-color);
+  border: 2px solid var(--marron-color);
+}
+.restaurant-card__btn:hover {
+  background-color: white;
+  color: var(--gris4-color);
+}
+
+.facts {
+  margin-bottom: 24px;
+}
+.facts .fact {
+  padding: 25px 20px 28px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 14px;
+  align-items: center;
+}
+.facts .fact__icon {
+  width: 65px;
+  height: 65px;
+}
+.facts .fact__text--big {
+  font-family: "Old Standard TT";
+  font-size: 60px;
+  line-height: 60px;
+  letter-spacing: -1.8px;
+  display: block;
+}
+.facts .fact__text--small {
+  font-size: 16px;
+  line-height: 16px;
+  color: #777777;
+  display: block;
+  font-family: var(--archivo-font);
+}
+.facts .fact__arrow {
+  width: 32px;
+  height: 32px;
+  margin-left: auto;
 }/*# sourceMappingURL=main.css.map */

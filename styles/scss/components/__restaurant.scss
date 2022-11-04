@@ -1,0 +1,37 @@
+.restaurant-card{
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.5);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    &__img{
+        width: 350px;
+        height: 232px;
+        object-fit: cover;
+        margin-bottom: 30px;
+    }
+    &__subtitle{
+        margin-bottom: 20px;
+    }
+    &__title{
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: -1.05px;
+        hyphens: none;
+        margin-bottom: 30px;
+    }
+    &__text{
+        font-family: var(--archivo-font);
+        color: var(--gris4-color);
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    &__btn{
+        color: white;
+        background-color: var(--marron-color);
+        border: 2px solid var(--marron-color);
+        &:hover{
+            background-color: white;
+            color:  var(--gris4-color);
+        }
+    }
+
+}

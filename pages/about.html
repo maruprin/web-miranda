@@ -1,260 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Hotel Miranda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../styles/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Roboto:wght@100&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&family=Old+Standard+TT&display=swap"
-    rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100&display=swap" rel="stylesheet" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  <title>About Us</title>
-</head>
+  <body>
+    <header>
+      <section class="header-navbar">
+        <nav class="navbar">
+          <div class="navbar__container">
+            <div class="navbar__container-iconsleft">
+              <img
+                src="../icons/menubtn.svg"
+                alt="burguer menu"
+                class="navbar__burguer"
+              />
+            </div>
+            <div class="navbar__container-logo">
+              <img
+                src="../assets/nav/logo-nav.png"
+                alt="logo"
+                class="navbar__logo"
+              />
+            </div>
+            <div class="navbar__container-iconsright">
+              <img
+                src="../icons/loginIcon.svg"
+                alt="user"
+                class="navbar__user"
+              />
+              <img
+                src="../icons/search.svg"
+                alt="search"
+                class="navbar__search"
+              />
+            </div>
+            <div class="navbar__categories">
+              <a
+                href="../pages/about.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>About us</li></a
+              >
+              <a
+                href="../pages/rooms.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>Rooms</li>
+              </a>
+              <a
+                href="../pages/offers.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>Offers</li>
+              </a>
+              <a
+                href="../pages/contact.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>Contact</li>
+              </a>
+            </div>
+          </div>
+          <div class="navbar__categories--mobile-hidden">
+            <img src="../icons/close.svg" class="close" />
+            <a href="./about.html" style="text-decoration: none; color: black">
+              <li>About us</li></a
+            >
+            <a href="./rooms.html" style="text-decoration: none; color: black">
+              <li>Rooms</li>
+            </a>
+            <a href="./offers.html" style="text-decoration: none; color: black">
+              <li>Offers</li>
+            </a>
+            <a
+              href="./contact.html"
+              style="text-decoration: none; color: black"
+            >
+              <li>Contact</li>
+            </a>
+          </div>
+        </nav>
+      </section>
+    </header>
 
-<div class="navbar__header">
+    <main>
+      <section class="section presentation px-20">
+        <h2 class="h2 presentation__subtitle">The ultimate luxury</h2>
+        <h1 class="h1 presentation__title">About us</h1>
+        <div class="breadcrumb">
+          <a href="/" class="a breadcrumb__a">Home</a
+          ><span class="breadcrumb__line">|</span
+          ><span class="breadcrumb__current">About</span>
+        </div>
+      </section>
+      <section class="section about-init px-20">
+        <div class="video__video-container about-init__video">
+          <video controls>
+            <source src="../assets/video.mp4#t=1.5" type="video/mp4" />
+            <source src="../assets/video.ogg#t=1.5" type="video/ogg" />
+          </video>
+        </div>
+        <p class="p about-init__text">
+          Hello. Our hotel has been present for over 20 years. We make the best
+          for all our customers.
+        </p>
+        <div class="about-init__amenities">
+          <div class="about-amenities">
+            <div
+              class="about-amenities__icon about-amenities__icon--break"
+            ></div>
+            <span class="about-amenities__text">Breakfast</span>
+          </div>
+          <div class="about-amenities">
+            <div
+              class="about-amenities__icon about-amenities__icon--plane"
+            ></div>
+            <span class="about-amenities__text">Airport pickup</span>
+          </div>
+          <div class="about-amenities">
+            <div class="about-amenities__icon about-amenities__icon--ubi"></div>
+            <span class="about-amenities__text">City guide</span>
+          </div>
+          <div class="about-amenities">
+            <div
+              class="about-amenities__icon about-amenities__icon--room"
+            ></div>
+            <span class="about-amenities__text">Luxury room</span>
+          </div>
+        </div>
+      </section>
+      <section class="section px-20">
+        <div class="restaurant-card px-20">
+          <img
+            src="/assets/about-us/restaurant.jpg"
+            alt="reataurant"
+            class="restaurant-card__img"
+          />
+          <h2 class="h2 restaurant-card__subtitle">Restaurant</h2>
+          <h3 class="h3 restaurant-card__title">
+            Get Restaurant facilities & many other more
+          </h3>
+          <p class="restaurant-card__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tem por incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip.
+          </p>
+          <button class="buttonS restaurant-card__btn">Take a tour</button>
+        </div>
+      </section>
 
-  <nav class="navbar">
-    <div class="navbar__container">
-      <div class="navbar__container-icon">
-        <img src="./assets/nav/hamburger-icon.png" alt="boton hamburguesa" class="navbar__hamburger" id="hamburger" />
-      </div>
-      <div class="navbar__container-logo">
-        <img src="./assets/nav/logo-nav.png" alt="logo del hotel" class="navbar__logo" />
-      </div>
+      <section class="section features-container features-container--dark">
+        <h2 class="h2 features-container__subtitle">Facilities</h2>
+        <h1 class="h1 features-container__title">Core Features</h1>
+        <div class="swiper feature-swiper">
+          <div class="swiper-wrapper">
+            <div
+              class="feature feature--active swiper-slide"
+              aria-label="1 / 6"
+            >
+              <div class="feature__icon feature__icon--one"></div>
+              <span class="feature__number">01</span>
+              <h4 class="h4 feature__h4">Have high rating</h4>
+              <p class="p feature__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="feature swiper-slide" aria-label="2 / 6">
+              <div class="feature__icon feature__icon--two"></div>
+              <div class="feature__number">02</div>
+              <h4 class="h4 feature__h4">Quiet hours</h4>
+              <p class="p feature__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="feature swiper-slide" aria-label="3 / 6">
+              <div class="feature__icon feature__icon--three"></div>
+              <div class="feature__number">03</div>
+              <h4 class="h4 feature__h4">Best Locations</h4>
+              <p class="p feature__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="feature swiper-slide" aria-label="4 / 6">
+              <div class="feature__icon feature__icon--four"></div>
+              <div class="feature__number">04</div>
+              <h4 class="h4 feature__h4">Free cancellation</h4>
+              <p class="p feature__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="feature swiper-slide" aria-label="5 / 6">
+              <div class="feature__icon feature__icon--five"></div>
+              <div class="feature__number">05</div>
+              <h4 class="h4 feature__h4">Payment options</h4>
+              <p class="p feature__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+            <div class="feature swiper-slide" aria-label="6 / 6">
+              <div class="feature__icon feature__icon--six"></div>
+              <div class="feature__number">06</div>
+              <h4 class="h4 feature__h4">Special Offers</h4>
+              <p class="p feature__p">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna..
+              </p>
+            </div>
+          </div>
+          <div
+            class="features-container__justificated feature-swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+          ></div>
+        </div>
+      </section>
+      <section class="section px-20">
+        <h2 class="h2 section__h2">Counter</h2>
+        <h3 class="h3 section__h3">Some fun facts</h3>
+        <div class="facts">
+          <div class="fact">
+            <img src="/icons/facts/happy.svg" alt="happy" class="fact__icon" />
+            <div class="fact__text">
+              <span class="fact__text--big">8000</span
+              ><span class="fact__text--small">Happy users</span>
+            </div>
+            <img src="/icons/facts/arrow.svg" alt="arrow" class="fact__arrow" />
+          </div>
+          <div class="fact">
+            <img
+              src="/icons/facts/thumbup.svg"
+              alt="thumbup"
+              class="fact__icon"
+            />
+            <div class="fact__text">
+              <span class="fact__text--big">10M</span
+              ><span class="fact__text--small">Reviews & Appriciate</span>
+            </div>
+            <img src="/icons/facts/arrow.svg" alt="arrow" class="fact__arrow" />
+          </div>
+          <div class="fact">
+            <img src="/icons/facts/world.svg" alt="world" class="fact__icon" />
+            <div class="fact__text">
+              <span class="fact__text--big">100</span
+              ><span class="fact__text--small">Country coverage</span>
+            </div>
+            <img src="/icons/facts/arrow.svg" alt="arrow" class="fact__arrow" />
+          </div>
+        </div>
 
-      <div class="navbar__categories">
-        <a href="about.html" style="text-decoration: none; color: black;">
-          <li>About us</li>
-          <a href="rooms.html" style="text-decoration: none; color: black;">
-            <li>Rooms</li>
-          </a>
-          <a href="offers.html" style="text-decoration: none; color: black;">
-            <li>Offers</li>
-          </a>
-          <a href="contact.html" style="text-decoration: none; color: black;">
-            <li>Contact</li>
-          </a>
-      </div>
+        <div class="swiper facts-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide__fact">
+              <img
+                style="width: 100%; height: 230px; object-fit: cover"
+                src="/assets/about-us/happy-user.jpg"
+                alt="happy"
+              />
+            </div>
+            <div class="swiper-slide swiper-slide__fact">
+              <img
+                src="/assets/about-us/happy-user2.jpg"
+                style="width: 100%; height: 200px; object-fit: cover"
+                alt=""
+              />
+            </div>
+          </div>
+          <div
+            class="facts__justificated facts-images-swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
+          ></div>
+        </div>
+      </section>
+    </main>
 
-      <div class="navbar__container-icons-right">
-        <img src="./assets/nav/person.png" alt="personal" class="navbar__person" />
-        <img src="./assets/nav/lupa.png" alt="lupa" class="navbar__search" />
-      </div>
-    </div>
+    <footer>
+      <section
+        class="preFooter px-20"
+        style="background-image: url(/icons/bgFooter.svg)"
+      >
+        <div class="preFooter__logo">
+          <img src="/icons/Hwhite.svg" alt="H" class="preFooter__logo--icon" />
+          <img
+            src="/icons/HotelMirandaBig.svg"
+            alt="Hotel Miranda"
+            class="preFooter__logo--name"
+          />
+        </div>
+        <p class="preFooter__text">
+          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+          eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+        </p>
+        <div class="preFooter__redes">
+          <a href="#" class="preFooter__redes--a preFooter__redes--fb"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--tw"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--be"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--in"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--you"></a>
+        </div>
 
-    <div class="navbar__categories--mobile-hidden">
-      <img src="./assets/nav/close-nav.png" class="close" />
-      <a href="about.html" style="text-decoration: none; color: black;">
-        <li>About us</li>
-        <a href="rooms.html" style="text-decoration: none; color: black;">
-          <li>Rooms</li>
-        </a>
-        <a href="offers.html" style="text-decoration: none; color: black;">
-          <li>Offers</li>
-        </a>
-        <a href="contact.html" style="text-decoration: none; color: black;">
-          <li>Contact</li>
-        </a>
-    </div>
+        <h3 class="h3 preFooter__services--title">Services.</h3>
+        <ul class="preFooter__services--list">
+          <li>+ Resturent & Bar</li>
+          <li>+ Swimming Pool</li>
+          <li>+ Wellness & Spa</li>
+          <li>+ Restaurant</li>
+          <li>+ Conference Room</li>
+          <li>+ Coctail Party house</li>
+          <li>+ Gaming Zone</li>
+          <li>+ Marriage Party</li>
+          <li>+ Party Planning</li>
+          <li>+ Tour Consultancy</li>
+        </ul>
 
-  </nav>
-</div>
+        <h3 class="h3 preFooter__contactUs--title">Contact Us.</h3>
+        <div class="preFooter__contactUs--item">
+          <img
+            src="/icons/phone.svg"
+            alt="phone"
+            class="preFooter__contactUs--item--icon"
+          />
+          <div class="preFooter__contactUs--item--info">
+            <span class="infoTitle">Phone Number</span>
+            <span class="infoContent">+987 876 765 76 577</span>
+          </div>
+        </div>
+        <div class="preFooter__contactUs--item">
+          <img
+            src="/icons/mail.svg"
+            alt="mail"
+            class="preFooter__contactUs--item--icon"
+          />
+          <div class="preFooter__contactUs--item--info">
+            <span class="infoTitle">Email</span>
+            <span class="infoContent">mariana.diprimio@gmail.com</span>
+          </div>
+        </div>
+        <div class="preFooter__contactUs--item">
+          <img
+            src="/icons/map.svg"
+            alt="ubication"
+            class="preFooter__contactUs--item--icon"
+          />
+          <div class="preFooter__contactUs--item--info">
+            <span class="infoTitle">Ubication</span>
+            <span class="infoContent">Barcelona, Spain</span>
+          </div>
+        </div>
+      </section>
+      <section class="footer px-20">
+        <p class="footer__textTop">Copyright @Maruprin - 2022</p>
+        <div class="footer__textBottom">
+          <a href="#" class="footer__textBottom--a">Terms of Use</a>
+          <span class="footer__textBottom--line">|</span>
+          <a href="#" class="footer__textBottom--a"
+            >Privacy Environmental Policy</a
+          >
+        </div>
+      </section>
+    </footer>
 
-<header>
-  <div class="header__cover">
-    <h4>THE ULTIMATE LUXURY</h4>
-    <h1>About Us</h1>
-
-    <div class="header__cover--choices">
-      <a href="index.html" style="text-decoration: none; color: black;">Home |</a>
-      <a class="about">About</a>
-
-    </div>
-  </div>
-
-</header>
-
-<body>
-  <div class="body__container--video">
-    <video controls>
-      <source src="./assets/video.mp4#t=1.5" type="video/mp4">
-      <source src="./assets/video.ogg#t=1.5" type="video/ogg">
-    </video>
-
-    <h1>Hello. Our hotel has been present for over 20 years. We make the best for all our customers.</h1>
-  </div>
-
-  <div class="four__sections">
-    <img src="./assets/page 2/about-us/Breakfast.png" />
-
-    <img src="./assets/page 2/about-us/Airport pickup.png" />
-
-    <img src="./assets/page 2/about-us/City Guide.png" />
-
-    <img src="./assets/page 2/about-us/Luxury room.png" />
-  </div>
-
-  <div class="restaurant__container">
-    <img src="./assets/about-us/restaurant.jpg" class="fake-photo" alt="fake photo" />
-
-    <div class="text__container">
-      <h4>RESTAURANT</h4>
-      <h1>Get Restaurant Facilities & Many Other More</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tem por incididunt ut labore et
-        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.
-      </p>
-      <button class="button__primary">TAKE A TOUR</button>
-
-    </div>
-
-  </div>
-
-  <div class="about__container--facilities">
-
-    <h4>FACILITIES</h4>
-    <h1>Core Features</h1>
-
-    <div class="facilities__container--images">
-
-      <img src="./assets/page 2/about-us/facilities/1.png" />
-
-      <img src="./assets/page 2/about-us/facilities/2.png" />
-
-      <img src="./assets/page 2/about-us/facilities/3.png" />
-
-      <img src="./assets/page 2/about-us/facilities/4.png" />
-
-      <img src="./assets/page 2/about-us/facilities/5.png" />
-
-      <img src="./assets/page 2/about-us/facilities/6.png" />
-    </div>
-
-    <div class="swiper__core--facilities">
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide" style="background-image: url('./assets/page 2/about-us/facilities/1.png')"></div>
-        <div class="swiper-slide" style="background-image: url('./assets/page 2/about-us/facilities/2.png')"></div>
-        <div class="swiper-slide" style="background-image: url('./assets/page 2/about-us/facilities/3.png')"></div>
-        <div class="swiper-slide" style="background-image: url('./assets/page 2/about-us/facilities/4.png')"></div>
-        <div class="swiper-slide" style="background-image: url('./assets/page 2/about-us/facilities/5.png')"></div>
-        <div class="swiper-slide" style="background-image: url('./assets/page 2/about-us/facilities/6.png')"></div>
-      </div>
-      <div class="swiper-pagination"></div>
-
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-    </div>
-
-  </div>
-
-  <div class="counter__container">
-    <h4>COUNTER</h4>
-    <h1>Some Fun Facts</h1>
-
-    <div class="facts__container--images">
-      <img src="./assets/page 2/about-us/counter/happy-user.png" />
-
-      <img src="./assets/page 2/about-us/counter/likes.png" />
-
-      <img src="./assets/page 2/about-us/counter/world.png" />
-
-    </div>
-
-    <div class="little-slider__container">
-      <img src="./assets/about-us/happy-users.jpg" alt="fake photo" class="fake-photo" />
-      <img src="./assets/about-us/happy-users2.jpg" alt="fake photo" class="fake-photo" />
-
-
-
-    </div>
-  </div>
-</body>
-<footer>
-  <div class="footer__socials">
-
-    <img src="./assets/footer/Logo.png" />
-
-    <p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et
-      dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
-
-    <img src="./assets/footer/Socials.png" class="socials" />
-
-  </div>
-
-
-
-  <div class="footer__services">
-    <h4>Services.</h4> <br />
-
-    <ul>
-      <li>+ Resturent & Bar</li>
-      <li>+ Swimming Pool</li>
-      <li>+ Wellness & Spa</li>
-      <li>+ Restaurant</li>
-      <li>+ Coference Room</li>
-      <li>+ Coctail Party House</li>
-
-    </ul>
-
-    <ul>
-      <li>+ Gaming Zone</li>
-      <li>+ Marriage Party</li>
-      <li>+ Party Planning</li>
-      <li>+ Tour Consultancy</li>
-    </ul>
-  </div>
-
-
-  <div class="footer__contact">
-    <h4 class="contact">Contact Us.</h4><br />
-
-    <div class="contact__icon">
-      <img src="./assets/footer/mobile.png" alt="mobile" />
-      <p>Phone Number <br />
-        <small>+987 876 765 76 577</small>
-      </p>
-    </div>
-
-    <div class="contact__icon">
-      <img src="./assets/footer/message.png" alt="message" />
-      <p>Phone Number <br />
-        <small>+987 876 765 76 577</small>
-      </p>
-
-    </div>
-
-    <div class="contact__icon">
-      <img src="./assets/footer/location.png" alt="location" />
-      <p>Phone Number <br />
-        <small>+987 876 765 76 577</small>
-      </p>
-    </div>
-
-  </div>
-
-
-</footer>
-<div class="footer__policy">
-  <h4>Copyright By @maruprin - 2022</h4>
-  <h4>Terms of use | Privacy Environmental Policy</h4>
-</div>
-<script type="text/javascript" src="./javascript/navbar.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script type="text/javascript" src="./javascript/slider.js"></script>
-<script type="text/javascript" src="./javascript/index.js"></script>
-
+    <script src="../js/swiper.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
 </html>

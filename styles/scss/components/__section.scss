@@ -1,0 +1,39 @@
+.section {
+    margin-bottom: 40px;
+    position: relative;
+  
+    &--justified {
+      text-align: center;
+    }
+  
+    &--dark {
+      background-color: var(--gris7-color);
+      color: white;
+    }
+  
+    &--marg0 {
+      margin: 0;
+    }
+  
+    &__h2 {
+      margin-bottom: 24px;
+  
+      &--dark {
+        color: white;
+      }
+    }
+  
+    &__h3 {
+      margin-bottom: 16px;
+    }
+  
+    &__p {
+      color: var(--gris4-color);
+  
+      margin-bottom: 24px;
+  
+      &--dark {
+        color: var(--gris7-color);
+      }
+    }
+  }

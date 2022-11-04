@@ -20,11 +20,12 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   </head>
+
   <body>
     <header>
     <section class="header-navbar">
       <nav class="navbar">
-        <div class="navbar__container">
+      <div class="navbar__container">
         <div class="navbar__container-iconsleft">
           <img src="./icons/menubtn.svg" alt="burguer menu" class="navbar__burguer"/>
         </div>
@@ -51,8 +52,8 @@
               <a href="./pages/contact.html" style="text-decoration: none; color: black;">
                 <li>Contact</li>
               </a>
-          </div>
         </div>
+      </div>
         <div class="navbar__categories--mobile-hidden">
             <img src="./icons/close.svg" class="close" />
             <a href="about.html" style="text-decoration: none; color: black;">
@@ -75,11 +76,11 @@
       <h2 class="h2 presentation__subtitle">THE ULTIMATE LUXURY EXPERIENCE</h2>
       <h1 class="h1 presentation__title">The Perfect Base For You</h1>
       <div class="presentation__buttonsContainer">
-      <a href="/pages/rooms.html" class="presentation__btn"
+      <a href="/pages/rooms.html" class="buttonS presentation__btn"
       >TAKE A TOUR</a>
     <a
       href="/pages/about.html"
-      class="presentation__btn"
+      class="buttonS presentation__btn"
       >LEARN MORE</a>
     </div>
     </section>
@@ -184,7 +185,7 @@
         </div>
       </div>
     </section>
-    <section class="video">
+    <section class="section video">
       <h2 class="h2 video__subtitle">INTRO VIDEO</h2>
       <h1 class="h1 video__title">Meet With Our Luxury Place.</h1>
       <p class="video__text">
@@ -258,38 +259,6 @@
       <img src="./icons/donut.svg" alt="donut img" class="menu__donutImg">
       <h2 class="h2 menu__subtitle">MENU</h2>
       <h1 class="h1 menu__title">Our Foods Menu</h1>
-
-
-
-
-
-
-      <!-- <div>
-        <img src="" alt="img Eggs & bacon" />
-        <h5>Eggs & Bacon</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-      </div>
-      <div>
-        <img src="" alt="img Tea or Coffee" />
-        <h5>Tea or Coffee</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-      </div>
-      <div>
-        <img src="" alt="img Chia Oatmeal" />
-        <h5>Chia Oatmeal</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adip isicing elit, sed do
-          eiusmod tempor.
-        </p>
-      </div> -->
-    
-
       <div class="food-swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide food">
@@ -313,7 +282,7 @@
             </div>
           </div>
           <div class="swiper-slide food">
-            <img class="" src="./assets/food/fruit3.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
+            <img class="food__img" src="./assets/food/fruit3.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
             <div class="food__text">
               <h4 class="h4 food__h4">Chia oatmeal</h4>
               <p class="p food__p">
@@ -323,7 +292,7 @@
             </div>
           </div>
           <div class="swiper-slide food">
-            <img class="" src="./assets/food/fruit2.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
+            <img class="food__img" src="./assets/food/fruit2.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
             <div class="food__text">
               <h4 class="h4 food__h4">Fruit parfait</h4>
               <p class="p food__p">
@@ -333,7 +302,7 @@
             </div>
           </div>
           <div class="swiper-slide food">
-            <img class="" src="./assets/food/mermelade.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
+            <img class="food__img" src="./assets/food/mermelade.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
             <div class="food__text">
               <h4 class="h4 food__h4">Marmalade selection</h4>
               <p class="p food__p">
@@ -343,7 +312,7 @@
             </div>
           </div>
           <div class="swiper-slide food">
-            <img class="" src="./assets/food/cheese3.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
+            <img class="food__img" src="./assets/food/cheese3.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
             <div class="food__text">
               <h4 class="h4 food__h4">Cheese plate</h4>
               <p class="p food__p">
@@ -360,84 +329,6 @@
           class="swiper-button-prev food-swiper__button food-swiper__button--prev"
         ></div>
       </div>
-  
-
-
-
-<!-- <div class="food">
-    <div class="food-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img class="" src="./assets/food/egg.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
-          <div class="">
-            <h4 class="h4">Eggs & bacon</h4>
-            <p class="p">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit,
-              sed do eiusmod tempor.
-            </p>
-          </div>
-        </div>
-        <div class="swiper-slide  swiper-slide__food">
-          <img class="food__img" src="./assets/food/coffee.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
-          <div class="food">
-            <h4 class="h4">Tea or Coffee</h4>
-            <p class="p">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit,
-              sed do eiusmod tempor.
-            </p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="" src="./assets/food/chia.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
-          <div class="">
-            <h4 class="h4">Chia oatmeal</h4>
-            <p class="p">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit,
-              sed do eiusmod tempor.
-            </p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="" src="./assets/food/fruit3.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
-          <div class="">
-            <h4 class="h4">Fruit parfait</h4>
-            <p class="p">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit,
-              sed do eiusmod tempor.
-            </p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="" src="./assets/food/mermelade.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
-          <div class="t">
-            <h4 class="h4">Marmalade selection</h4>
-            <p class="p">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit,
-              sed do eiusmod tempor.
-            </p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img class="" src="./assets/food/cheese.jpg" alt="Eggs" style="object-fit:cover; width:120px; height: 120px;">
-          <div class="">
-            <h4 class="h4">Cheese plate</h4>
-            <p class="p">
-              Lorem ipsum dolor sit amet, consectetur adip isicing elit,
-              sed do eiusmod tempor.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-        class="swiper-button-next food-swiper__button food-swiper__button--next"
-      ></div>
-      <div
-        class="swiper-button-prev food-swiper__button food-swiper__button--prev"
-      ></div> -->
-
-
   <div class="swiper food-images-swiper">
     <div class="swiper-wrapper">
       <img src="./assets/food/food5.jpg" alt="food" class="swiper-slide swiper-slide__food">
@@ -449,14 +340,6 @@
       class="justifiedBullet food-images-swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"
     ></div>
 </section>
-
-
-
-
-
-
-
-
     <section class="stats">
       <div class="stats__item">
        <img class="stats__icon" src="./icons/stats/rocket.svg" alt="rocket"><br>
@@ -479,12 +362,14 @@
         <p class="stats__text">Idea Raised Funds</p>
       </div>
       </section>
-<section class="preFooter px-20" style="background-image: url(./icons/bgFooter.svg);">
+
+      <footer>
+      <section class="preFooter px-20" style="background-image: url(./icons/bgFooter.svg);">
        <div class="preFooter__logo">
-        <img src="./icons/Hwhite.svg" alt="" class="preFooter__logo--icon">
-        <img src="./icons/HotelMirandaBig.svg" alt="" class="preFooter__logo--name">
+        <img src="./icons/Hwhite.svg" alt="H" class="preFooter__logo--icon">
+        <img src="./icons/HotelMirandaBig.svg" alt="Hotel Miranda" class="preFooter__logo--name">
        </div>
-  <p class="preFooter__text">
+      <p class="preFooter__text">
           Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
           eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
           ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
@@ -495,10 +380,8 @@
           <a href="#" class="preFooter__redes--a preFooter__redes--be"></a> 
           <a href="#" class="preFooter__redes--a preFooter__redes--in"></a>
           <a href="#" class="preFooter__redes--a preFooter__redes--you"></a>
-          
-
         </div>
-      </div>
+      
       <h3 class="h3 preFooter__services--title">Services.</h3>
       <ul class="preFooter__services--list">
         <li>+ Resturent & Bar</li>
@@ -515,21 +398,21 @@
 
       <h3 class="h3 preFooter__contactUs--title">Contact Us.</h3>
       <div class="preFooter__contactUs--item">
-        <img src="./icons/phone.svg" alt="" class="preFooter__contactUs--item--icon">
+        <img src="./icons/phone.svg" alt="phone" class="preFooter__contactUs--item--icon">
         <div class="preFooter__contactUs--item--info">
           <span class="infoTitle">Phone Number</span>
           <span class="infoContent">+987 876 765 76 577</span>
         </div>
       </div>
       <div class="preFooter__contactUs--item">
-        <img src="./icons/mail.svg" alt="" class="preFooter__contactUs--item--icon">
+        <img src="./icons/mail.svg" alt="mail" class="preFooter__contactUs--item--icon">
         <div class="preFooter__contactUs--item--info">
           <span class="infoTitle">Email</span>
           <span class="infoContent">mariana.diprimio@gmail.com</span>
         </div>
       </div>
       <div class="preFooter__contactUs--item">
-        <img src="./icons/map.svg" alt="" class="preFooter__contactUs--item--icon">
+        <img src="./icons/map.svg" alt="ubication" class="preFooter__contactUs--item--icon">
         <div class="preFooter__contactUs--item--info">
           <span class="infoTitle">Ubication</span>
           <span class="infoContent">Barcelona, Spain</span>
