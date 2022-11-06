@@ -12,7 +12,10 @@
 
   &__amount {
     font-size: 32px;
-
+    &--strikethrough{
+      font-size: 25px;
+      text-decoration: line-through;
+    }
     &--same-size {
       font-size: 18px;
       line-height: 17px;
@@ -30,8 +33,6 @@
 
   &--previous {
     line-height: 25px;
-    text-decoration: line-through;
-
     & .price__amount {
       font-size: 23px;
     }

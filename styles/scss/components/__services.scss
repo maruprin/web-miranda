@@ -1,0 +1,27 @@
+@use '../utils/_mixins';
+
+.servicesContainer {
+    margin-bottom: 20px;
+  padding-bottom: 44px;
+
+  @include mixins.grid(2, 18px, 17px);
+
+  &--offer {
+    padding-bottom: 25px;
+  }
+}
+
+.service {
+
+  &__name {
+    font-family: var(--archivo-font);
+    color: var(--gris4-color);
+  }
+
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+  }
+
+}

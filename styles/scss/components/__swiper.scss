@@ -48,12 +48,13 @@
   }
 
   &--out {
-    left: 15px;
+    left: 15px !important;
+    
   }
 
   &--out-wide {
-    left: 15px;
-    top: 30vw;
+    left: 15px !important;
+    top: 30vw !important;
   }
 }
 
@@ -76,12 +77,12 @@
   }
 
   &--out {
-    right: 15px;
+    right: 15px !important;
   }
 
   &--out-wide {
-    right: 15px;
-    top: 30vw;
+    right: 15px !important;
+    top: 30vw !important;
   }
 }
 

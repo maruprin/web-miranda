@@ -1,0 +1,23 @@
+.popular-rooms{
+    background-color: var(--gris7-color);
+    padding-bottom: 50px;
+    &__subtitle{
+        padding-top: 50px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: var(--marron-color);
+    }
+    &__title{
+        margin-bottom: 40px;
+        color: var(--blanco3-color);
+        font-size: 45px;
+        text-align: center;
+    }
+    &__card{
+        background-color: white;
+        padding-bottom: 20px;
+    }
+}
+.icon-bar-roomCard{
+    margin: -22px auto 28px auto !important;
+}

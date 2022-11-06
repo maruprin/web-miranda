@@ -1,18 +1,27 @@
 .offer {
-    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.5);
-    padding-bottom: 32px;
-    margin-bottom: 32px;
+  box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.5);
+  padding-bottom: 32px;
+  margin-bottom: 32px;
   &__img {
     width: 100%;
-    
+
     background-color: black;
     margin-bottom: 15px;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 15/9;
-    &--room1{
-        background-image: url('/assets/rooms/room2.jpg');
+    &--room1 {
+      background-image: url("/assets/rooms/room6.jpg");
+    }
+    &--room2 {
+      background-image: url("/assets/rooms/room2.jpg");
+    }
+    &--room3 {
+      background-image: url("/assets/rooms/room.jpg");
+    }
+    &--room4 {
+      background-image: url("/assets/rooms/room5.jpg");
     }
   }
   &__prev-price {
@@ -20,10 +29,31 @@
     position: absolute;
     right: 10px;
     bottom: 0;
+    color: var(--blanco3-color);
   }
   &__new-price {
     position: absolute;
     right: 10px;
     bottom: 0;
+  }
+  &__subtitle {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-family: var(--roboto-font);
+    color: var(--gris4-color);
+    margin-bottom: 24px;
+  }
+  &__btn {
+    color: var(--blanco3-color);
+    background-color: var(--marron-color);
+    border: 2px solid var(--marron-color);
+    &:hover {
+      color: var(--marron-color);
+      background-color: var(--blanco3-color);
+    }
   }
 }
