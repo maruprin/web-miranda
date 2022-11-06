@@ -1,0 +1,94 @@
+@use '../utils/_mixins';
+
+.header {
+  width: 100%;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+  padding: 17px 20px;
+  background-color: white;
+
+  @include mixins.flexbox(row, nowrap, space-between, 10px);
+
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+
+  }
+
+  &__icon {
+    width: 20px;
+    height: 20px;
+
+    &--login {
+      background-image: url('/icons/loginIcon.svg');
+    }
+
+    &--search {
+      background-image: url('/icons/search.svg');
+    }
+
+  }
+
+  &__menu {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29), inset 0px 3px 6px rgba(0, 0, 0, 0.29);
+
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+
+    z-index: 100;
+  }
+
+  &__menu-btn {
+    width: 20px;
+    height: 13px;
+    margin-right: 32px;
+    background-image: url('/icons/menubtn.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    &--close {
+      background-image: url('/icons/close.svg');
+    }
+  }
+}
+
+.nav {
+
+    &__li {
+      padding: 12px;
+  
+      &:first-child {
+        padding-top: 32px;
+      }
+  
+      &:last-child {
+        padding-bottom: 26px;
+      }
+    }
+  
+    &__a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 17px;
+      font-family: var(--archivo-font);
+      &:hover{
+        color: var(--marron-color);
+      }
+    }
+  }
+  .show {
+    display: block;
+  }

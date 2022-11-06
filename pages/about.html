@@ -22,86 +22,40 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <script src="/js/toggleMenu.js" type="module"></script>
   </head>
 
   <body>
-    <header>
-      <section class="header-navbar">
-        <nav class="navbar">
-          <div class="navbar__container">
-            <div class="navbar__container-iconsleft">
-              <img
-                src="../icons/menubtn.svg"
-                alt="burguer menu"
-                class="navbar__burguer"
-              />
-            </div>
-            <div class="navbar__container-logo">
-              <img
-                src="../assets/nav/logo-nav.png"
-                alt="logo"
-                class="navbar__logo"
-              />
-            </div>
-            <div class="navbar__container-iconsright">
-              <img
-                src="../icons/loginIcon.svg"
-                alt="user"
-                class="navbar__user"
-              />
-              <img
-                src="../icons/search.svg"
-                alt="search"
-                class="navbar__search"
-              />
-            </div>
-            <div class="navbar__categories">
-              <a
-                href="../pages/about.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>About us</li></a
-              >
-              <a
-                href="../pages/rooms.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>Rooms</li>
-              </a>
-              <a
-                href="../pages/offers.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>Offers</li>
-              </a>
-              <a
-                href="../pages/contact.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>Contact</li>
-              </a>
-            </div>
-          </div>
-          <div class="navbar__categories--mobile-hidden">
-            <img src="../icons/close.svg" class="close" />
-            <a href="./about.html" style="text-decoration: none; color: black">
-              <li>About us</li></a
-            >
-            <a href="./rooms.html" style="text-decoration: none; color: black">
-              <li>Rooms</li>
-            </a>
-            <a href="./offers.html" style="text-decoration: none; color: black">
-              <li>Offers</li>
-            </a>
-            <a
-              href="./contact.html"
-              style="text-decoration: none; color: black"
-            >
-              <li>Contact</li>
-            </a>
-          </div>
+    <header class="header">
+      <div class="header__left">
+        <button id="menuBtn" class="header__menu-btn"></button>
+        <a href="/" class="logo logo--header">
+          <div class="logo__img"></div>
+          <div class="logo__name"></div>
+        </a>
+      </div>
+      <div class="header__right">
+        <button class="header__icon header__icon--login"></button>
+        <button class="header__icon header__icon--search"></button>
+      </div>
+      <div id="menu" class="header__menu">
+        <nav class="header__nav nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <a href="/pages/about.html" class="nav__a">About Us</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/rooms.html" class="nav__a">Rooms</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/offers.html" class="nav__a">Offers</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/contact.html" class="nav__a">Contact</a>
+            </li>
+          </ul>
         </nav>
-      </section>
+      </div>
     </header>
 
     <main>

@@ -17,85 +17,39 @@
       defer
     ></script>
     <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script src="/js/toggleMenu.js" type="module"></script>
   </head>
   <body>
-    <header>
-      <section class="header-navbar">
-        <nav class="navbar">
-          <div class="navbar__container">
-            <div class="navbar__container-iconsleft">
-              <img
-                src="../icons/menubtn.svg"
-                alt="burguer menu"
-                class="navbar__burguer"
-              />
-            </div>
-            <div class="navbar__container-logo">
-              <img
-                src="../assets/nav/logo-nav.png"
-                alt="logo"
-                class="navbar__logo"
-              />
-            </div>
-            <div class="navbar__container-iconsright">
-              <img
-                src="../icons/loginIcon.svg"
-                alt="user"
-                class="navbar__user"
-              />
-              <img
-                src="../icons/search.svg"
-                alt="search"
-                class="navbar__search"
-              />
-            </div>
-            <div class="navbar__categories">
-              <a
-                href="../pages/about.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>About us</li></a
-              >
-              <a
-                href="../pages/rooms.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>Rooms</li>
-              </a>
-              <a
-                href="../pages/offers.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>Offers</li>
-              </a>
-              <a
-                href="../pages/contact.html"
-                style="text-decoration: none; color: black"
-              >
-                <li>Contact</li>
-              </a>
-            </div>
-          </div>
-          <div class="navbar__categories--mobile-hidden">
-            <img src="../icons/close.svg" class="close" />
-            <a href="./about.html" style="text-decoration: none; color: black">
-              <li>About us</li></a
-            >
-            <a href="./rooms.html" style="text-decoration: none; color: black">
-              <li>Rooms</li>
-            </a>
-            <a href="./offers.html" style="text-decoration: none; color: black">
-              <li>Offers</li>
-            </a>
-            <a
-              href="./contact.html"
-              style="text-decoration: none; color: black"
-            >
-              <li>Contact</li>
-            </a>
-          </div>
+    <header class="header">
+      <div class="header__left">
+        <button id="menuBtn" class="header__menu-btn"></button>
+        <a href="/" class="logo logo--header">
+          <div class="logo__img"></div>
+          <div class="logo__name"></div>
+        </a>
+      </div>
+      <div class="header__right">
+        <button class="header__icon header__icon--login"></button>
+        <button class="header__icon header__icon--search"></button>
+      </div>
+      <div id="menu" class="header__menu">
+        <nav class="header__nav nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <a href="/pages/about.html" class="nav__a">About Us</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/rooms.html" class="nav__a">Rooms</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/offers.html" class="nav__a">Offers</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/contact.html" class="nav__a">Contact</a>
+            </li>
+          </ul>
         </nav>
-      </section>
+      </div>
     </header>
     <main>
       <section class="section presentation px-20">
@@ -147,19 +101,17 @@
           Find my actual location
         </button>
         <div class="map__wrap" id="map"></div>
-       
+
         <div class="map__search">
-         
-            <input
-              type="text"
-              placeholder="Put your address"
-              class="map__search-input"
-              id="input-adress"
-            />
-            <button class="map__search-button" id="search-location">
-              Search
-            </button>
-         
+          <input
+            type="text"
+            placeholder="Put your address"
+            class="map__search-input"
+            id="input-adress"
+          />
+          <button class="map__search-button" id="search-location">
+            Search
+          </button>
         </div>
         <button class="map__buttonNear" id="nearest">
           Find my nearest location
@@ -183,7 +135,11 @@
               class="contactForm__input"
               placeholder="Your full name"
             />
-         <img src="/icons/contact-form/person.svg" alt="person" class="contactForm__input--icon">
+            <img
+              src="/icons/contact-form/person.svg"
+              alt="person"
+              class="contactForm__input--icon"
+            />
           </div>
           <div class="contactForm__inputContainer">
             <input
@@ -192,7 +148,11 @@
               class="contactForm__input"
               placeholder="Add phone number"
             />
-            <img src="/icons/contact-form/phone.svg" alt="phone" class="contactForm__input--icon">
+            <img
+              src="/icons/contact-form/phone.svg"
+              alt="phone"
+              class="contactForm__input--icon"
+            />
           </div>
           <div class="contactForm__inputContainer">
             <input
@@ -201,7 +161,11 @@
               class="contactForm__input"
               placeholder="Enter mail address"
             />
-            <img src="/icons/contact-form/mail.svg" alt="mail" class="contactForm__input--icon">
+            <img
+              src="/icons/contact-form/mail.svg"
+              alt="mail"
+              class="contactForm__input--icon"
+            />
           </div>
           <div class="contactForm__inputContainer">
             <input
@@ -210,7 +174,11 @@
               class="contactForm__input"
               placeholder="Enter subject"
             />
-            <img src="/icons/contact-form/book.svg" alt="subject" class="contactForm__input--icon">
+            <img
+              src="/icons/contact-form/book.svg"
+              alt="subject"
+              class="contactForm__input--icon"
+            />
           </div>
           <div class="contactForm__inputContainer">
             <textarea
@@ -219,7 +187,11 @@
               rows="10"
               placeholder="Enter message"
             ></textarea>
-            <img src="/icons/contact-form/pencil.svg" alt="message" class="contactForm__input--icon">
+            <img
+              src="/icons/contact-form/pencil.svg"
+              alt="message"
+              class="contactForm__input--icon"
+            />
           </div>
           <button class="buttonM contactForm__btn">Send</button>
         </form>

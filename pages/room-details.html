@@ -22,32 +22,41 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <script src="/js/toggleMenu.js" type="module"></script>
   </head>
 
   <body>
     <header class="header">
-        <div class="header__left">
-          <button id="menuBtn" class="header__menu-btn"></button>
-          <a href="/" class="logo logo--header">
-            <div class="logo__img"></div>
-            <div class="logo__name"></div>
-          </a>
-        </div>
-        <div class="header__right">
-          <button class="header__icon header__icon--login"></button>
-          <button class="header__icon header__icon--search"></button>
-        </div>
-        <div id="menu" class="header__menu">
-          <nav class="header__nav nav">
-            <ul class="nav__ul">
-              <li class="nav__li"><a href="/html/about.html" class="nav__a">About Us</a></li>
-              <li class="nav__li"><a href="/html/rooms.html" class="nav__a">Rooms</a></li>
-              <li class="nav__li"><a href="/html/offers.html" class="nav__a">Offers</a></li>
-              <li class="nav__li"><a href="/html/contact.html" class="nav__a">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <div class="header__left">
+        <button id="menuBtn" class="header__menu-btn"></button>
+        <a href="/" class="logo logo--header">
+          <div class="logo__img"></div>
+          <div class="logo__name"></div>
+        </a>
+      </div>
+      <div class="header__right">
+        <button class="header__icon header__icon--login"></button>
+        <button class="header__icon header__icon--search"></button>
+      </div>
+      <div id="menu" class="header__menu">
+        <nav class="header__nav nav">
+          <ul class="nav__ul">
+            <li class="nav__li">
+              <a href="/pages/about.html" class="nav__a">About Us</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/rooms.html" class="nav__a">Rooms</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/offers.html" class="nav__a">Offers</a>
+            </li>
+            <li class="nav__li">
+              <a href="/pages/contact.html" class="nav__a">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <main>
       <section class="section presentation px-20">
@@ -64,253 +73,284 @@
         <h2 class="h2 roomDetails__subtitle">Double bed</h2>
         <h3 class="h3 roomDetails__title">Luxury Double Bed</h3>
         <div class="price">
-          <span class="price__amount">$500</span><span class="price__night">/Night</span>
+          <span class="price__amount">$500</span
+          ><span class="price__night">/Night</span>
         </div>
-        <img src="/assets/rooms/room6.jpg" alt="room" class="roomDetails__img">
+        <img
+          src="/assets/rooms/room6.jpg"
+          alt="room"
+          class="roomDetails__img"
+        />
       </section>
       <section class="section">
         <div class="roomDetails__check">
           <h4 class="roomDetails__check--title">Check Availability</h4>
           <form class="roomDetails__check--form">
-            <label for="arrivalDate" class="roomDetails__check--label">Check In</label>
-            <input id="arrivalDate" type="date" class="roomDetails__check--input" value="2020-03-24">
-            <label for="ledepartureDate" class="roomDetails__check--label">Check Out</label>
-            <input id="ledepartureDate" type="date" class="roomDetails__check--input" value="2020-03-24">
+            <label for="arrivalDate" class="roomDetails__check--label"
+              >Check In</label
+            >
+            <input
+              id="arrivalDate"
+              type="date"
+              class="roomDetails__check--input"
+              value="2020-03-24"
+            />
+            <label for="ledepartureDate" class="roomDetails__check--label"
+              >Check Out</label
+            >
+            <input
+              id="ledepartureDate"
+              type="date"
+              class="roomDetails__check--input"
+              value="2020-03-24"
+            />
           </form>
-          <button class="buttonM roomDetails__check--btn">Check Availability</button>
+          <button class="buttonM roomDetails__check--btn">
+            Check Availability
+          </button>
         </div>
       </section>
       <section class="section px-20">
-        <p class="roomDetails__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-          fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-          anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-          dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-          consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem
-          ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut
-          labore et dolore magnam aliquam quaerat voluptatem.</p>
+        <p class="roomDetails__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum. Sed ut
+          perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+          inventore veritatis et quasi architecto beatae vitae dicta sunt
+          explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+          odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+          voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum
+          quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam
+          eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+          voluptatem.
+        </p>
       </section>
       <section class="section px-20">
         <h4 class="h4">Amenities</h4>
-        <hr class="separator">
+        <hr class="separator" />
         <div class="servicesContainer servicesContainer--offer">
-            <div class="service">
-              <img
-                src="/icons/amenities/ac.svg"
-                alt=""
-                class="service__icon"
-              />
-              <span class="service__name">Air conditioner</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/breakfast.svg"
-                alt="breakfast"
-                class="service__icon"
-              /><span class="service__name">Breakfast</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/cleaning.svg"
-                alt="cleaning"
-                class="service__icon"
-              /><span class="service__name">Cleaning</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/grocery.svg"
-                alt="grocery"
-                class="service__icon"
-              /><span class="service__name">Grocery</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/shop.svg"
-                alt="shop"
-                class="service__icon"
-              /><span class="service__name">Shop near</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/wifi.svg"
-                alt="wifi"
-                class="service__icon"
-              /><span class="service__name">High Speed WiFi</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/kitchen.svg"
-                alt="kitchen"
-                class="service__icon"
-              /><span class="service__name">Kitchen</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/shower.svg"
-                alt="shower"
-                class="service__icon"
-              /><span class="service__name">Shower</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/bed.svg"
-                alt="bed"
-                class="service__icon"
-              /><span class="service__name">Single bed</span>
-            </div>
-            <div class="service">
-              <img
-                src="/icons/amenities/towels.svg"
-                alt="towels"
-                class="service__icon"
-              /><span class="service__name">Towels</span>
-            </div>
-            <div class="service">
-                <img
-                  src="/icons/amenities/security.svg"
-                  alt="cleaning"
-                  class="service__icon"
-                /><span class="service__name">Smart Security</span>
-              </div>
-              <div class="service">
-                <img
-                  src="/icons/amenities/support.svg"
-                  alt="cleaning"
-                  class="service__icon"
-                /><span class="service__name">24/7 Online Support</span>
-              </div>
-              <div class="service">
-                <img
-                  src="/icons/amenities/expert.svg"
-                  alt="cleaning"
-                  class="service__icon"
-                /><span class="service__name">Expert Team</span>
-              </div>
-              <div class="service">
-                <img
-                  src="/icons/amenities/key.svg"
-                  alt="cleaning"
-                  class="service__icon"
-                /><span class="service__name">Strong Locker</span>
-              </div>
+          <div class="service">
+            <img src="/icons/amenities/ac.svg" alt="" class="service__icon" />
+            <span class="service__name">Air conditioner</span>
           </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/breakfast.svg"
+              alt="breakfast"
+              class="service__icon"
+            /><span class="service__name">Breakfast</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/cleaning.svg"
+              alt="cleaning"
+              class="service__icon"
+            /><span class="service__name">Cleaning</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/grocery.svg"
+              alt="grocery"
+              class="service__icon"
+            /><span class="service__name">Grocery</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/shop.svg"
+              alt="shop"
+              class="service__icon"
+            /><span class="service__name">Shop near</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/wifi.svg"
+              alt="wifi"
+              class="service__icon"
+            /><span class="service__name">High Speed WiFi</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/kitchen.svg"
+              alt="kitchen"
+              class="service__icon"
+            /><span class="service__name">Kitchen</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/shower.svg"
+              alt="shower"
+              class="service__icon"
+            /><span class="service__name">Shower</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/bed.svg"
+              alt="bed"
+              class="service__icon"
+            /><span class="service__name">Single bed</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/towels.svg"
+              alt="towels"
+              class="service__icon"
+            /><span class="service__name">Towels</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/security.svg"
+              alt="cleaning"
+              class="service__icon"
+            /><span class="service__name">Smart Security</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/support.svg"
+              alt="cleaning"
+              class="service__icon"
+            /><span class="service__name">24/7 Online Support</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/expert.svg"
+              alt="cleaning"
+              class="service__icon"
+            /><span class="service__name">Expert Team</span>
+          </div>
+          <div class="service">
+            <img
+              src="/icons/amenities/key.svg"
+              alt="cleaning"
+              class="service__icon"
+            /><span class="service__name">Strong Locker</span>
+          </div>
+        </div>
       </section>
       <section class="section">
         <div class="founder">
-          <img src="/assets/details/founder.jpg" alt="founder" class="founder__img">
+          <img
+            src="/assets/details/founder.jpg"
+            alt="founder"
+            class="founder__img"
+          />
           <h2 class="h4 founder__name">Rosalina D. William</h2>
           <h4 class="h2 founder__subtitle">Founder, Qux co.</h4>
-          <p class="founder__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore.</p>
+          <p class="founder__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore.
+          </p>
         </div>
       </section>
       <section class="section cancellation px-20">
         <h4 class="h4">Cancellation</h4>
-        <hr class="separator">
-        <p class="cancellation__text">Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus
-          mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days
-          to get a full refund.</p>
+        <hr class="separator" />
+        <p class="cancellation__text">
+          Phasellus volutpat neque a tellus venenatis, a euismod augue
+          facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus.
+          Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to
+          get a full refund.
+        </p>
       </section>
       <section class="section">
         <h4 class="h4 px-20">Related Rooms</h4>
-        <hr class="separator px-20">
+        <hr class="separator px-20" />
         <div class="button-container px-20">
-            <div class="swiper-button-prev swiper-button-prev--out-wide"></div>
-            <div class="swiper-button-next swiper-button-next--out-wide"></div>
-            <div class="popular-rooms__card">
-              <div class="swiper swiper-300px rooms-swiper">
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide swiper-slide__room"
-                    style="background-image: url('/assets/rooms/room.jpg')"
-                  ></div>
-                  <div
-                    class="swiper-slide swiper-slide__room"
-                    style="background-image: url('/assets/rooms/room2.jpg')"
-                  ></div>
-                  <div
-                    class="swiper-slide swiper-slide__room"
-                    style="background-image: url('/assets/rooms/room3.jpg')"
-                  ></div>
-                  <div
-                    class="swiper-slide swiper-slide__room"
-                    style="background-image: url('/assets/rooms/room4.jpg')"
-                  ></div>
-                  <div
-                    class="swiper-slide swiper-slide__room"
-                    style="background-image: url('/assets/rooms/room5.jpg')"
-                  ></div>
-                  <div
-                    class="swiper-slide swiper-slide__room"
-                    style="background-image: url('/assets/rooms/room6.jpg')"
-                  ></div>
-                  <div
-                    class="swiper-slide swiper-slide__room"
-                    style="background-image: url('/assets/rooms/room7.jpg')"
-                  ></div>
-                </div>
-              </div>
-              <div class="icon-bar icon-bar--bottom icon-bar-roomCard">
-                <img
-                  src="/icons/icon-bar/bed.svg"
-                  alt="bedIcon"
-                  class="icon-bar__icon"
-                />
-                <img
-                  src="/icons/icon-bar/wifi.svg"
-                  alt="wifiIcon"
-                  class="icon-bar__icon"
-                />
-                <img
-                  src="/icons/icon-bar/car.svg"
-                  alt="carIcon"
-                  class="icon-bar__icon"
-                />
-                <img
-                  src="/icons/icon-bar/ac.svg"
-                  alt="acIcon"
-                  class="icon-bar__icon"
-                />
-                <img
-                  src="/icons/icon-bar/gym.svg"
-                  alt="gymIcon"
-                  class="icon-bar__icon"
-                />
-                <img
-                  src="/icons/icon-bar/nosmoke.svg"
-                  alt="nosmokeIcon"
-                  class="icon-bar__icon"
-                />
-                <img
-                  src="/icons/icon-bar/bar.svg"
-                  alt="barIcon"
-                  class="icon-bar__icon"
-                />
-              </div>
-              <h4 class="h4 room__title">Minimal duplex room</h4>
-              <p class="p room__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore.
-              </p>
-              <div class="price price--booking">
-                <div>
-                  <span class="price__amount price__amount--same-size"
-                    >$345</span
-                  ><span class="price__night price__night--same-size"
-                    >/Night</span
-                  >
-                </div>
-                <a href="room-details.html" class="room__booking-now"
-                  >Booking Now</a
-                >
+          <div class="swiper-button-prev swiper-button-prev--out-wide"></div>
+          <div class="swiper-button-next swiper-button-next--out-wide"></div>
+          <div class="popular-rooms__card">
+            <div class="swiper swiper-300px rooms-swiper">
+              <div class="swiper-wrapper">
+                <div
+                  class="swiper-slide swiper-slide__room"
+                  style="background-image: url('/assets/rooms/room.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide swiper-slide__room"
+                  style="background-image: url('/assets/rooms/room2.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide swiper-slide__room"
+                  style="background-image: url('/assets/rooms/room3.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide swiper-slide__room"
+                  style="background-image: url('/assets/rooms/room4.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide swiper-slide__room"
+                  style="background-image: url('/assets/rooms/room5.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide swiper-slide__room"
+                  style="background-image: url('/assets/rooms/room6.jpg')"
+                ></div>
+                <div
+                  class="swiper-slide swiper-slide__room"
+                  style="background-image: url('/assets/rooms/room7.jpg')"
+                ></div>
               </div>
             </div>
+            <div class="icon-bar icon-bar--bottom icon-bar-roomCard">
+              <img
+                src="/icons/icon-bar/bed.svg"
+                alt="bedIcon"
+                class="icon-bar__icon"
+              />
+              <img
+                src="/icons/icon-bar/wifi.svg"
+                alt="wifiIcon"
+                class="icon-bar__icon"
+              />
+              <img
+                src="/icons/icon-bar/car.svg"
+                alt="carIcon"
+                class="icon-bar__icon"
+              />
+              <img
+                src="/icons/icon-bar/ac.svg"
+                alt="acIcon"
+                class="icon-bar__icon"
+              />
+              <img
+                src="/icons/icon-bar/gym.svg"
+                alt="gymIcon"
+                class="icon-bar__icon"
+              />
+              <img
+                src="/icons/icon-bar/nosmoke.svg"
+                alt="nosmokeIcon"
+                class="icon-bar__icon"
+              />
+              <img
+                src="/icons/icon-bar/bar.svg"
+                alt="barIcon"
+                class="icon-bar__icon"
+              />
+            </div>
+            <h4 class="h4 room__title">Minimal duplex room</h4>
+            <p class="p room__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore.
+            </p>
+            <div class="price price--booking">
+              <div>
+                <span class="price__amount price__amount--same-size">$345</span
+                ><span class="price__night price__night--same-size"
+                  >/Night</span
+                >
+              </div>
+              <a href="room-details.html" class="room__booking-now"
+                >Booking Now</a
+              >
+            </div>
           </div>
+        </div>
       </section>
-
-
     </main>
 
     <footer>
