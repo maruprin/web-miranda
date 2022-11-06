@@ -1,94 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Hotel Miranda</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="../styles/css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
     <script type="module" src="../js/googleMaps.js"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHenr2dG6Cx7Q5Px7_uTYmI1wFOjQy_0Y&callback=initMap"
       defer
     ></script>
     <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
-    </head>
-<body>
-    <section class="header-navbar">
+  </head>
+  <body>
+    <header>
+      <section class="header-navbar">
         <nav class="navbar">
           <div class="navbar__container">
-          <div class="navbar__container-iconsleft">
-            <img src="../assets/nav/hamburger-icon.png" alt="burguer menu" class="navbar__burguer"/>
-          </div>
-          <div class="navbar__container-logo">
-            <img
-              src="../assets/nav/logo-nav.png"
-              alt="logo"
-              class="navbar__logo"
-            />
-          </div>
-          <div class="navbar__container-iconsright">
-            <img src="../assets/nav/person.png" alt="user" class="navbar__user" />
-            <img src="../assets/nav/lupa.png" alt="search" class="navbar__search" />
-          </div>
-          <div class="navbar__categories">
-              <a href="./about.html" style="text-decoration: none; color: black;">
-                <li>About us</li>
-                <a href="./pages/rooms.html" style="text-decoration: none; color: black;">
-                  <li>Rooms</li>
-                </a>
-                <a href="./offers.html" style="text-decoration: none; color: black;">
-                  <li>Offers</li>
-                </a>
-                <a href="./contact.html" style="text-decoration: none; color: black;">
-                  <li>Contact</li>
-                </a>
+            <div class="navbar__container-iconsleft">
+              <img
+                src="../icons/menubtn.svg"
+                alt="burguer menu"
+                class="navbar__burguer"
+              />
+            </div>
+            <div class="navbar__container-logo">
+              <img
+                src="../assets/nav/logo-nav.png"
+                alt="logo"
+                class="navbar__logo"
+              />
+            </div>
+            <div class="navbar__container-iconsright">
+              <img
+                src="../icons/loginIcon.svg"
+                alt="user"
+                class="navbar__user"
+              />
+              <img
+                src="../icons/search.svg"
+                alt="search"
+                class="navbar__search"
+              />
+            </div>
+            <div class="navbar__categories">
+              <a
+                href="../pages/about.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>About us</li></a
+              >
+              <a
+                href="../pages/rooms.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>Rooms</li>
+              </a>
+              <a
+                href="../pages/offers.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>Offers</li>
+              </a>
+              <a
+                href="../pages/contact.html"
+                style="text-decoration: none; color: black"
+              >
+                <li>Contact</li>
+              </a>
             </div>
           </div>
           <div class="navbar__categories--mobile-hidden">
-              <img src="./assets/nav/close-nav.png" class="close" />
-              <a href="about.html" style="text-decoration: none; color: black;">
-                <li>About us</li>
-                <a href="rooms.html" style="text-decoration: none; color: black;">
-                  <li>Rooms</li>
-                </a>
-                <a href="offers.html" style="text-decoration: none; color: black;">
-                  <li>Offers</li>
-                </a>
-                <a href="contact.html" style="text-decoration: none; color: black;">
-                  <li>Contact</li>
-                </a>
-            </div>
+            <img src="../icons/close.svg" class="close" />
+            <a href="./about.html" style="text-decoration: none; color: black">
+              <li>About us</li></a
+            >
+            <a href="./rooms.html" style="text-decoration: none; color: black">
+              <li>Rooms</li>
+            </a>
+            <a href="./offers.html" style="text-decoration: none; color: black">
+              <li>Offers</li>
+            </a>
+            <a
+              href="./contact.html"
+              style="text-decoration: none; color: black"
+            >
+              <li>Contact</li>
+            </a>
+          </div>
         </nav>
       </section>
-      <div class="map">
+    </header>
+    <main>
+      <section class="section presentation px-20">
+        <h2 class="h2 presentation__subtitle">The ultimate luxury</h2>
+        <h1 class="h1 presentation__title">Ultimate Room</h1>
+        <div class="breadcrumb">
+          <a href="/" class="a breadcrumb__a">Home</a
+          ><span class="breadcrumb__line">|</span
+          ><span class="breadcrumb__current">Contact</span>
+        </div>
+      </section>
+
+      <section class="section contactInfo px-20">
+        <div class="contactInfo__item">
+          <span class="contactInfo__number">01</span>
+          <img src="/icons/map.svg" alt="map" class="contactInfo__icon" />
+          <div>
+            <span class="contactInfo__item--title">Hotel Adress</span>
+            <span class="contactInfo__item--subtitle"
+              >19/A, Cirikon City hall Tower</span
+            >
+            <span class="contactInfo__item--subtitle">New York, NYC</span>
+          </div>
+        </div>
+        <div class="contactInfo__item">
+          <span class="contactInfo__number">02</span>
+          <img src="/icons/phone.svg" alt="phone" class="contactInfo__icon" />
+          <div>
+            <span class="contactInfo__item--title">Phone Number</span>
+            <span class="contactInfo__item--subtitle">+976 568 675 78 647</span>
+            <span class="contactInfo__item--subtitle">+876 766 867 56 745</span>
+          </div>
+        </div>
+        <div class="contactInfo__item">
+          <span class="contactInfo__number">03</span>
+          <img src="/icons/mail.svg" alt="mail" class="contactInfo__icon" />
+          <div>
+            <span class="contactInfo__item--title">Email</span>
+            <span class="contactInfo__item--subtitle">info@webmail.com</span>
+            <span class="contactInfo__item--subtitle"
+              >jobs.webmail@mail.com</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section map">
         <button class="custom-map-control-button" id="location">
-            Find my actual location
-          </button>
+          Find my actual location
+        </button>
         <div class="map__wrap" id="map"></div>
+       
         <div class="map__search">
-          <div class="map__search-input">
+         
             <input
               type="text"
               placeholder="Put your address"
-              class="map__search-directionInput"
+              class="map__search-input"
               id="input-adress"
             />
             <button class="map__search-button" id="search-location">
               Search
             </button>
-          </div>
+         
         </div>
         <button class="map__buttonNear" id="nearest">
           Find my nearest location
         </button>
-        <select class="map__select" id="comunidades-select" name="select">
-        </select>
+        <select
+          class="map__select"
+          id="comunidades-select"
+          name="select"
+        ></select>
         <div class="map__results" id="results-wrap">
           <ol id="results"></ol>
         </div>
-      </div>
-   
-</body>
+      </section>
+
+      <section class="section px-20">
+        <form class="contactForm">
+          <div class="contactForm__inputContainer">
+            <input
+              type="text"
+              id="fullName"
+              class="contactForm__input"
+              placeholder="Your full name"
+            />
+         <img src="/icons/contact-form/person.svg" alt="person" class="contactForm__input--icon">
+          </div>
+          <div class="contactForm__inputContainer">
+            <input
+              type="tel"
+              id="phone"
+              class="contactForm__input"
+              placeholder="Add phone number"
+            />
+            <img src="/icons/contact-form/phone.svg" alt="phone" class="contactForm__input--icon">
+          </div>
+          <div class="contactForm__inputContainer">
+            <input
+              type="email"
+              id="email"
+              class="contactForm__input"
+              placeholder="Enter mail address"
+            />
+            <img src="/icons/contact-form/mail.svg" alt="mail" class="contactForm__input--icon">
+          </div>
+          <div class="contactForm__inputContainer">
+            <input
+              type="text"
+              id="subject"
+              class="contactForm__input"
+              placeholder="Enter subject"
+            />
+            <img src="/icons/contact-form/book.svg" alt="subject" class="contactForm__input--icon">
+          </div>
+          <div class="contactForm__inputContainer">
+            <textarea
+              id="message"
+              class="contactForm__textarea"
+              rows="10"
+              placeholder="Enter message"
+            ></textarea>
+            <img src="/icons/contact-form/pencil.svg" alt="message" class="contactForm__input--icon">
+          </div>
+          <button class="buttonM contactForm__btn">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section
+        class="preFooter px-20"
+        style="background-image: url(/icons/bgFooter.svg)"
+      >
+        <div class="preFooter__logo">
+          <img src="/icons/Hwhite.svg" alt="H" class="preFooter__logo--icon" />
+          <img
+            src="/icons/HotelMirandaBig.svg"
+            alt="Hotel Miranda"
+            class="preFooter__logo--name"
+          />
+        </div>
+        <p class="preFooter__text">
+          Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
+          eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
+        </p>
+        <div class="preFooter__redes">
+          <a href="#" class="preFooter__redes--a preFooter__redes--fb"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--tw"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--be"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--in"></a>
+          <a href="#" class="preFooter__redes--a preFooter__redes--you"></a>
+        </div>
+
+        <h3 class="h3 preFooter__services--title">Services.</h3>
+        <ul class="preFooter__services--list">
+          <li>+ Resturent & Bar</li>
+          <li>+ Swimming Pool</li>
+          <li>+ Wellness & Spa</li>
+          <li>+ Restaurant</li>
+          <li>+ Conference Room</li>
+          <li>+ Coctail Party house</li>
+          <li>+ Gaming Zone</li>
+          <li>+ Marriage Party</li>
+          <li>+ Party Planning</li>
+          <li>+ Tour Consultancy</li>
+        </ul>
+
+        <h3 class="h3 preFooter__contactUs--title">Contact Us.</h3>
+        <div class="preFooter__contactUs--item">
+          <img
+            src="/icons/phone.svg"
+            alt="phone"
+            class="preFooter__contactUs--item--icon"
+          />
+          <div class="preFooter__contactUs--item--info">
+            <span class="infoTitle">Phone Number</span>
+            <span class="infoContent">+987 876 765 76 577</span>
+          </div>
+        </div>
+        <div class="preFooter__contactUs--item">
+          <img
+            src="/icons/mail.svg"
+            alt="mail"
+            class="preFooter__contactUs--item--icon"
+          />
+          <div class="preFooter__contactUs--item--info">
+            <span class="infoTitle">Email</span>
+            <span class="infoContent">mariana.diprimio@gmail.com</span>
+          </div>
+        </div>
+        <div class="preFooter__contactUs--item">
+          <img
+            src="/icons/map.svg"
+            alt="ubication"
+            class="preFooter__contactUs--item--icon"
+          />
+          <div class="preFooter__contactUs--item--info">
+            <span class="infoTitle">Ubication</span>
+            <span class="infoContent">Barcelona, Spain</span>
+          </div>
+        </div>
+      </section>
+      <section class="footer px-20">
+        <p class="footer__textTop">Copyright @Maruprin - 2022</p>
+        <div class="footer__textBottom">
+          <a href="#" class="footer__textBottom--a">Terms of Use</a>
+          <span class="footer__textBottom--line">|</span>
+          <a href="#" class="footer__textBottom--a"
+            >Privacy Environmental Policy</a
+          >
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>

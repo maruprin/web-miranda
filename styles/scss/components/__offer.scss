@@ -1,0 +1,29 @@
+.offer {
+    box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.5);
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  &__img {
+    width: 100%;
+    
+    background-color: black;
+    margin-bottom: 15px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 15/9;
+    &--room1{
+        background-image: url('/assets/rooms/room2.jpg');
+    }
+  }
+  &__prev-price {
+    margin-bottom: 50px;
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+  &__new-price {
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+  }
+}

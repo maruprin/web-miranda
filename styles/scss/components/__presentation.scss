@@ -6,15 +6,15 @@
     background-color: var(--gris5-color);
     color: var(--blanco-color);
     padding: 20px;
-    padding-top: 50px;
+    padding-top: 70px;
     padding-bottom: 70px;
     
     &__subtitle{
         color: var(--blanco-color) !important;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     &__title{
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
     &__buttonsContainer{
     @include mixins.flexbox(column,nowrap,flex-start,20px);
