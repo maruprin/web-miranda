@@ -755,6 +755,12 @@ body {
   margin: 0 auto;
 }
 
+.separator {
+  border: 1px solid var(--blanco3-color);
+  margin-top: 14px;
+  margin-bottom: 35px;
+}
+
 .presentation {
   width: 100%;
   margin-top: 70px;
@@ -1706,4 +1712,98 @@ body {
 
 .icon-bar-roomCard {
   margin: -22px auto 28px auto !important;
+}
+
+.roomDetails__subtitle {
+  margin-bottom: 20px;
+}
+.roomDetails__title {
+  margin-bottom: 30px;
+}
+.roomDetails__img {
+  width: 100%;
+  max-width: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.roomDetails__check {
+  background-color: white;
+  color: var(--gris7-color);
+  padding: 0 40px;
+  font-family: var(--archivo-font);
+}
+.roomDetails__check--title {
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.54px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 36px;
+}
+.roomDetails__check--form {
+  padding-bottom: 0;
+}
+.roomDetails__check--label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 13px;
+}
+.roomDetails__check--input {
+  height: 60px;
+  border-bottom: none;
+  background-color: var(--blanco3-color);
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+  color: var(--gris4-color);
+  padding: 14px 24px;
+}
+.roomDetails__check--btn {
+  width: 100%;
+  padding-right: 26px;
+  padding-left: 26px;
+  color: white;
+  background-color: var(--marron-color);
+  border: 2px solid var(--marron-color);
+}
+.roomDetails__check--btn:hover {
+  background-color: white;
+  color: var(--marron-color);
+}
+.roomDetails__text {
+  color: var(--gris4-color);
+  margin-bottom: 30px;
+  font-family: var(--roboto-font);
+}
+
+.founder {
+  text-align: center;
+  padding: 60px 28px 41px;
+}
+.founder__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 150px;
+  background-color: var(--gris3-color);
+  margin: 0 auto 38px;
+  position: relative;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.founder__name {
+  margin-bottom: 20px;
+}
+.founder__subtitle {
+  color: var(--marron-color);
+  margin-bottom: 30px;
+}
+.founder__text {
+  font-family: var(--roboto-font);
+  color: var(--gris4-color);
+}
+
+.cancellation__text {
+  font-family: var(--roboto-font);
+  color: var(--gris4-color);
 }/*# sourceMappingURL=main.css.map */
