@@ -16,6 +16,7 @@
     & .feature {
       background-color: var(--gris6-color);
       margin-bottom: 12px;
+      padding-bottom: 40px;
       &__number {
         color: var(--gris7-color);
         right: 12px;
@@ -40,6 +41,7 @@
   text-align: start;
   padding: 81px 38px;
   position: relative;
+  padding-bottom: 0px;
   &__icon {
     width: 72px;
     height: 72px;
@@ -81,6 +83,5 @@
   }
   &__p {
     font-family: var(--archivo-font);
-    margin-bottom: 33px;
   }
 }

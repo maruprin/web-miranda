@@ -530,7 +530,7 @@ body {
 }
 .swiper-slide__food {
   width: 335px;
-  height: 335px;
+  height: 200px !important;
   background-color: var(--marron-color);
   margin-bottom: 12px;
   position: relative;
@@ -587,6 +587,7 @@ body {
 .features-container--dark .feature {
   background-color: var(--gris6-color);
   margin-bottom: 12px;
+  padding-bottom: 40px;
 }
 .features-container--dark .feature__number {
   color: var(--gris7-color);
@@ -610,6 +611,7 @@ body {
   text-align: start;
   padding: 81px 38px;
   position: relative;
+  padding-bottom: 0px;
 }
 .feature__icon {
   width: 72px;
@@ -652,7 +654,6 @@ body {
 }
 .feature__p {
   font-family: var(--archivo-font);
-  margin-bottom: 33px;
 }
 
 .h1 {
