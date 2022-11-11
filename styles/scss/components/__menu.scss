@@ -7,7 +7,7 @@
         height: 115px;
         position: absolute;
         right: -25px;
-        top: 4930px;
+        top: -100px;
     }
     &__subtitle{
         margin-bottom: 20px;
@@ -22,7 +22,7 @@
 
   &__button {
     // top = 100% + design margin + half button
-    top: calc(1020% + 24px + 16px) !important;
+    top: calc(100% + 24px + 16px) !important;
 
     &--prev {
       width: 40px !important;

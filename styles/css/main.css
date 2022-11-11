@@ -983,7 +983,7 @@ body {
   height: 115px;
   position: absolute;
   right: -25px;
-  top: 4930px;
+  top: -100px;
 }
 .menu__subtitle {
   margin-bottom: 20px;
@@ -996,7 +996,7 @@ body {
   margin-bottom: 110px;
 }
 .food-swiper__button {
-  top: calc(1020% + 24px + 16px) !important;
+  top: calc(100% + 24px + 16px) !important;
 }
 .food-swiper__button--prev {
   width: 40px !important;
