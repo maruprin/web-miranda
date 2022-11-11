@@ -850,6 +850,7 @@ body {
 }
 .about__card {
   width: 270px;
+  position: relative;
   margin: 0 auto;
   margin-bottom: 50px;
   box-shadow: 0px 8px 16px rgba(33, 32, 32, 0.3);
@@ -871,8 +872,8 @@ body {
 }
 .about__card__iconBG {
   position: absolute;
-  top: 1650px;
-  right: 54px;
+  top: 338px;
+  right: 0px;
   z-index: -4;
 }
 .about__card__title {
@@ -996,7 +997,7 @@ body {
   margin-bottom: 110px;
 }
 .food-swiper__button {
-  top: calc(100% + 24px + 16px) !important;
+  top: calc(100% - 390px) !important;
 }
 .food-swiper__button--prev {
   width: 40px !important;

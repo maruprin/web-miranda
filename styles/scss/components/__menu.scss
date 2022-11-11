@@ -22,7 +22,7 @@
 
   &__button {
     // top = 100% + design margin + half button
-    top: calc(100% + 24px + 16px) !important;
+    top: calc(100% - 390px ) !important;
 
     &--prev {
       width: 40px !important;
