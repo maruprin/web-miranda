@@ -23,6 +23,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
     <script src="/js/toggleMenu.js" type="module"></script>
+    <script src="/js/search.js" type="module"></script>
   </head>
 
   <body>
@@ -35,8 +36,10 @@
         </a>
       </div>
       <div class="header__right">
-        <button class="header__icon header__icon--login"></button>
+        <input class="inputSearch" type="text" name="search" id="search">
         <button class="header__icon header__icon--search"></button>
+        <a href="https://maruprin.github.io/dashboardMiranda/login" class="header__icon header__icon--login"></a>
+        
       </div>
       <div id="menu" class="header__menu">
         <nav class="header__nav nav">
@@ -429,6 +432,7 @@
               </div>
             </div>
           </div>
+          <div class="btnContainer-swiperFood">
           <div
             class="swiper-button-next food-swiper__button food-swiper__button--next"
           ></div>
@@ -436,10 +440,11 @@
             class="swiper-button-prev food-swiper__button food-swiper__button--prev"
           ></div>
         </div>
-        <div class="swiper swiper-300px food-images-swiper">
+        </div>
+        <div class="swiper food-images-swiper">
           <div class="swiper-wrapper">
             <img
-              src="./assets/food/food5.jpg"
+              src="./assets/food/food7.png"
               alt="food"
               class="swiper-slide swiper-slide__food"
             />
@@ -449,7 +454,7 @@
               class="swiper-slide swiper-slide__food"
             />
             <img
-              src="./assets/food/food4.jpg"
+              src="./assets/food/food1.jpg"
               alt="food"
               class="swiper-slide swiper-slide__food"
             />

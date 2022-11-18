@@ -51,7 +51,6 @@ const foodImageSwiper = new Swiper(".food-images-swiper", {
   autoplay: {
     delay: 5000,
   },
-
   // If we need pagination
   pagination: {
     el: ".food-images-swiper-pagination",

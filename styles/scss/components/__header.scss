@@ -26,7 +26,7 @@
   &__icon {
     width: 20px;
     height: 20px;
-
+    cursor: pointer;
     &--login {
       background-image: url('/icons/loginIcon.svg');
     }
@@ -64,7 +64,14 @@
     }
   }
 }
-
+.inputSearch{
+  z-index: 102;
+  border: 1px solid var(--marron-color);
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  padding: 10px;
+}
 .nav {
 
     &__li {
@@ -91,4 +98,52 @@
   }
   .show {
     display: block;
+  }
+
+  @media (min-width: 1000px) {
+
+    .header{
+      &__left{
+        z-index: 101;
+      }
+      &__menu{
+        display: flex;
+        justify-content: end;
+        background-color: transparent;
+        margin-top: -56px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0), inset 0px 3px 6px rgba(0, 0, 0, 0);
+        &-btn{
+          display: none;
+        }
+      }
+      &__icon{
+        z-index: 101;
+   
+      }
+    }
+    .nav { 
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 455px;
+        &__ul{
+          display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+      &__li {
+        padding: 12px;
+    
+        &:first-child {
+          padding-top: 12px;
+        }
+    
+        &:last-child {
+          padding-bottom: 12px;
+        }
+      }
+    }
   }
