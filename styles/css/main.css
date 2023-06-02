@@ -893,6 +893,14 @@ body {
 .menu {
   margin-bottom: 70px;
 }
+@media (min-width: 768px) {
+  .menu .menu-container {
+    max-width: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+}
 .menu__donutImg {
   width: 115px;
   height: 115px;
@@ -915,11 +923,21 @@ body {
 }
 .food-swiper__button--prev {
   width: 40px !important;
-  left: 215px !important;
+  left: 5% !important;
+}
+@media (min-width: 768px) {
+  .food-swiper__button--prev {
+    left: 0% !important;
+  }
 }
 .food-swiper__button--next {
   width: 40px !important;
-  right: 30px !important;
+  right: 5% !important;
+}
+@media (min-width: 768px) {
+  .food-swiper__button--next {
+    right: 0% !important;
+  }
 }
 .food-swiper__button.swiper-button-disabled {
   background-color: var(--gris2-color);

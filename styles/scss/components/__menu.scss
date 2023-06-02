@@ -2,6 +2,14 @@
 
 .menu{
     margin-bottom: 70px;
+    .menu-container{
+      @media (min-width: 768px) {
+        max-width: 600px;
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+      }
+    }
     &__donutImg{
         width: 115px;
         height: 115px;
@@ -26,12 +34,18 @@
 
     &--prev {
       width: 40px !important;
-      left: 215px !important;
+      left: 5% !important;
+      @media (min-width: 768px) {
+        left: 0% !important;
+      }
     }
 
     &--next {
       width: 40px !important;
-      right: 30px !important;
+      right: 5% !important;
+      @media (min-width: 768px) {
+        right: 0% !important;
+      }
     }
 
     &.swiper-button-disabled {
