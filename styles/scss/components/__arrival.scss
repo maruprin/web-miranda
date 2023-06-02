@@ -1,28 +1,46 @@
-.arrival{
-    background-color: var(--gris7-color);
-    color: white;
-    width: 100%;
-    &__label{
-        font-family: var(--roboto-font);
-        font-size: 16px;
-        margin-bottom: 10px;
+.arrival {
+  background-color: var(--gris7-color);
+  color: white;
+  width: 100%;
+  &__form {
+    @media (min-width: 768px) {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      gap: 20px;
     }
-    &__calendarIcon{
-        position: absolute;
-        width: 15px;
+    &-item {
+      width: 100%;
     }
-    &__input{
-        color: var(--gris4-color);
-        position: relative;
-        width: 90%;
-        padding-bottom: 10px;
-        padding-left: 25px;
-        top: 0px;
-        left: 0px;
-        margin-bottom: 15px;
-        border-bottom: 2px solid var(--marron-color);
+  }
+  &__label {
+    font-family: var(--roboto-font);
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  &__calendarIcon {
+    position: absolute;
+    width: 15px;
+  }
+  &__input {
+    color: var(--gris4-color);
+    position: relative;
+    width: 90%;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--marron-color);
+    @media (min-width: 768px) {
+        width: 100%;
+      }
+  }
+  &__btn {
+    margin-top: 40px;
+    @media (min-width: 768px) {
+      margin: auto;
+      margin-top: 40px;
     }
-    &__btn{
-        margin-top: 40px;
-    }
+  }
 }

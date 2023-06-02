@@ -2,6 +2,12 @@
     background-color: var(--gris7-color);
     padding: 20px;
     padding-top: 40px;
+    .section-video-container{
+        @media (min-width: 768px) {
+            max-width: 600px;
+            margin: auto;
+          }
+    }
     &__subtitle{
         color: var(--marron-color);
         margin-bottom: 20px;

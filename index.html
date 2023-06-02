@@ -65,20 +65,21 @@
 
     <main>
       <section class="presentation px-20">
-        <h2 class="h2 presentation__subtitle">
-          THE ULTIMATE LUXURY EXPERIENCE
-        </h2>
-        <h1 class="h1 presentation__title">The Perfect Base For You</h1>
-        <div class="presentation__buttonsContainer">
-          <a href="/rooms.html" class="buttonS presentation__btn"
-            >TAKE A TOUR</a
-          >
-          <a href="/about.html" class="buttonS presentation__btn">LEARN MORE</a>
+        <div class="presentation__container">
+          <h2 class="h2 presentation__subtitle">
+            THE ULTIMATE LUXURY EXPERIENCE
+          </h2>
+          <h1 class="h1 presentation__title">The Perfect Base For You</h1>
+          <div class="presentation__buttonsContainer">
+            <a href="/rooms.html" class="buttonS presentation__btn">TAKE A TOUR</a>
+            <a href="/about.html" class="buttonS presentation__btn">LEARN MORE</a>
+          </div>
         </div>
       </section>
       <section class="arrival px-20 py-30">
         <form class="arrival__form">
-          <label for="arrivalDate" class="arrival__label">Arrival Date</label>
+          <div class="arrival__form-item">
+            <label for="arrivalDate" class="arrival__label">Arrival Date</label>
           <img
             src="./icons/calendar.svg"
             class="arrival__calendarIcon"
@@ -90,8 +91,10 @@
             class="arrival__input"
             value="2020-03-24"
           />
-          <label for="ledepartureDate" class="arrival__label"
-            >LeDeparture Date</label
+          </div>
+          <div class="arrival__form-item">
+            <label for="ledepartureDate" class="arrival__label"
+            >Departure Date</label
           >
           <img
             src="./icons/calendar.svg"
@@ -104,12 +107,14 @@
             class="arrival__input"
             value="2020-03-24"
           />
+          </div>
         </form>
         <button class="buttonM arrival__btn">CHECK AVAILABILITY</button>
       </section>
       <section class="about">
         <div class="about__section1">
-          <h2 class="h2 about__section1__subtitle">ABOUT US</h2>
+          <div class="section1">
+            <h2 class="h2 about__section1__subtitle">ABOUT US</h2>
           <h1 class="h1 about__section1__title">Discover Our Underground.</h1>
           <p class="about__section1__text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -118,6 +123,8 @@
             aliquip ex ea commodo consequat.
           </p>
           <button class="buttonS about__section1__btn">BOOK NOW</button>
+          </div>
+          
         </div>
         <div class="about__seccion2">
           <div class="about__card">
@@ -251,7 +258,8 @@
         </div>
       </section>
       <section class="section video">
-        <h2 class="h2 video__subtitle">INTRO VIDEO</h2>
+        <div class="section-video-container">
+          <h2 class="h2 video__subtitle">INTRO VIDEO</h2>
         <h1 class="h1 video__title">Meet With Our Luxury Place.</h1>
         <p class="video__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -266,6 +274,7 @@
           </video>
         </div>
         <button class="buttonS video__btn">BOOK NOW</button>
+        </div>
       </section>
       <section class="features-container">
         <h2 class="h2 features-container__subtitle">Facilities</h2>
