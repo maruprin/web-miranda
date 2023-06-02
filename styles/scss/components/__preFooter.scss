@@ -1,115 +1,128 @@
-@use '../utils/_mixins';
+@use "../utils/_mixins";
 
-.preFooter{
-    padding-top: 40px;
-    padding-bottom: 30px;
-    &__logo{
-        width: 250px;
-        margin-bottom: 20px;
-        &--icon{
-            background-color: var(--marron-color);
-            padding: 20px;
-            width: 60px;
-        }
-        &--name{
-            width: 115px;
-            margin-bottom: 11px;
-            margin-left: 22px;
-        }
+.preFooter {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  &__container {
+    @media (min-width: 768px) {
+      max-width: 900px;
+      margin: auto;
     }
-    &__text{
-        font-family: var(--archivo-font);
-        color: var(--gris4-color);
-        margin-bottom: 30px;
+  }
+  &__logo {
+    width: 250px;
+    margin-bottom: 20px;
+    &--icon {
+      background-color: var(--marron-color);
+      padding: 20px;
+      width: 60px;
     }
-    &__redes{
-        @include mixins.flexbox(row,nowrap,flex-start,10px);
-        margin-bottom: 30px;
-        &--a{
-            width: 40px;
-            height: 40px;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        &--fb{
-            background-image: url(../../../icons/social/fb-icon.svg);
-            &:hover{
-                background-image: url(../../../icons/social/fb-icon-white.svg);
-                background-color: var(--marron-color);
-                border-radius: 5px;
-            }
-        }
-        &--tw{
-            background-image: url(../../../icons/social/tw-icon.svg);
-            &:hover{
-                background-image: url(../../../icons/social/tw-icon-white.svg);
-                background-color: var(--marron-color);
-                border-radius: 5px;
-            }
-        }
-        &--be{
-            background-image: url(../../../icons/social/be-icon.svg);
-            &:hover{
-                background-image: url(../../../icons/social/be-icon-white.svg);
-                background-color: var(--marron-color);
-                border-radius: 5px;
-            }
-        }
-        &--in{
-            background-image: url(../../../icons/social/in-icon.svg);
-            &:hover{
-                background-image: url(../../../icons/social/in-icon-white.svg);
-                background-color: var(--marron-color);
-                border-radius: 5px;
-            }
-        }
-        &--you{
-            background-image: url(../../../icons/social/yt-icon.svg);
-            &:hover{
-                background-image: url(../../../icons/social/yt-icon-white.svg);
-                background-color: var(--marron-color);
-                border-radius: 5px;
-            }
-        }
+    &--name {
+      width: 115px;
+      margin-bottom: 11px;
+      margin-left: 22px;
     }
-    &__services{
-        
-        &--title{
-            font-size: 24px;
-        }
-        &--list{
-            font-family: var(--archivo-font);
-            max-height: 285px;
-            line-height: 48px;
-            color: var(--gris4-color);
-            @include mixins.flexbox(column,wrap,flex-start,0px);margin-bottom: 20px;
-        }
+  }
+  &__text {
+    font-family: var(--archivo-font);
+    color: var(--gris4-color);
+    margin-bottom: 30px;
+  }
+  &__redes {
+    @include mixins.flexbox(row, nowrap, flex-start, 10px);
+    margin-bottom: 30px;
+    &--a {
+      width: 40px;
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-    &__contactUs{
-        &--title{
-            font-size: 24px;
-            margin-bottom: 20px
-        }
-        &--item{
-            @include mixins.flexbox(row,nowrap,flex-start,20px);
-            margin-bottom: 40px;
-            &--icon{
-                width: 40px;
-                height: 40px;
-            }
-            &--info{
-                .infoTitle{
-                    font-size: 20px;
-                    line-height: 20px;
-                    display: block;
-                }
-                .infoContent{
-                    color: var(--gris4-color);
-                    font-size: 14px;
-                    line-height: 14px;
-                    font-family: var(--archivo-font);
-                }
-            }
-        }
+    &--fb {
+      background-image: url(../../../icons/social/fb-icon.svg);
+      &:hover {
+        background-image: url(../../../icons/social/fb-icon-white.svg);
+        background-color: var(--marron-color);
+        border-radius: 5px;
+      }
     }
+    &--tw {
+      background-image: url(../../../icons/social/tw-icon.svg);
+      &:hover {
+        background-image: url(../../../icons/social/tw-icon-white.svg);
+        background-color: var(--marron-color);
+        border-radius: 5px;
+      }
+    }
+    &--be {
+      background-image: url(../../../icons/social/be-icon.svg);
+      &:hover {
+        background-image: url(../../../icons/social/be-icon-white.svg);
+        background-color: var(--marron-color);
+        border-radius: 5px;
+      }
+    }
+    &--in {
+      background-image: url(../../../icons/social/in-icon.svg);
+      &:hover {
+        background-image: url(../../../icons/social/in-icon-white.svg);
+        background-color: var(--marron-color);
+        border-radius: 5px;
+      }
+    }
+    &--you {
+      background-image: url(../../../icons/social/yt-icon.svg);
+      &:hover {
+        background-image: url(../../../icons/social/yt-icon-white.svg);
+        background-color: var(--marron-color);
+        border-radius: 5px;
+      }
+    }
+  }
+  &__subcontainer {
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 100px;
+    }
+  }
+  &__services {
+    &--title {
+      font-size: 24px;
+    }
+    &--list {
+      font-family: var(--archivo-font);
+      max-height: 285px;
+      line-height: 48px;
+      color: var(--gris4-color);
+      @include mixins.flexbox(column, wrap, flex-start, 0px);
+      margin-bottom: 20px;
+    }
+  }
+  &__contactUs {
+    &--title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    &--item {
+      @include mixins.flexbox(row, nowrap, flex-start, 20px);
+      margin-bottom: 40px;
+      &--icon {
+        width: 40px;
+        height: 40px;
+      }
+      &--info {
+        .infoTitle {
+          font-size: 20px;
+          line-height: 20px;
+          display: block;
+        }
+        .infoContent {
+          color: var(--gris4-color);
+          font-size: 14px;
+          line-height: 14px;
+          font-family: var(--archivo-font);
+        }
+      }
+    }
+  }
 }

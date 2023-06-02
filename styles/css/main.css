@@ -1048,6 +1048,12 @@ body {
   padding-top: 40px;
   padding-bottom: 30px;
 }
+@media (min-width: 768px) {
+  .preFooter__container {
+    max-width: 900px;
+    margin: auto;
+  }
+}
 .preFooter__logo {
   width: 250px;
   margin-bottom: 20px;
@@ -1119,6 +1125,13 @@ body {
   background-image: url(../../../icons/social/yt-icon-white.svg);
   background-color: var(--marron-color);
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  .preFooter__subcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+  }
 }
 .preFooter__services--title {
   font-size: 24px;
