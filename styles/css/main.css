@@ -413,6 +413,7 @@ body {
   .features-container {
     max-width: 900px;
     margin: auto;
+    margin-bottom: 100px;
   }
 }
 .features-container__subtitle {
