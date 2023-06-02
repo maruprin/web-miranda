@@ -1000,6 +1000,18 @@ body {
   padding-bottom: 30px;
   margin-bottom: 50px;
 }
+.stats__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .stats__container {
+    max-width: 900px;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+}
 .stats__item {
   width: 220px;
   margin: 0 auto;
