@@ -4,7 +4,7 @@
     margin-bottom: 70px;
     .menu-container{
       @media (min-width: 768px) {
-        max-width: 600px;
+        max-width: 900px;
         margin: auto;
         position: relative;
         overflow: hidden;
@@ -16,6 +16,10 @@
         position: absolute;
         right: -25px;
         top: -100px;
+        @media (min-width: 768px) {
+          top: 0;
+          right: 0;
+        }
     }
     &__subtitle{
         margin-bottom: 20px;
@@ -27,7 +31,10 @@
 .food-swiper {
   margin-bottom: 110px;
   //position: relative;
-
+      @media (min-width: 768px) {
+        max-width: 600px;
+        overflow: hidden;
+      }
   &__button {
     // top = 100% + design margin + half button
     top: calc(100% - 360px ) !important;

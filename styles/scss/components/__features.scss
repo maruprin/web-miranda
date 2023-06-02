@@ -1,7 +1,7 @@
 .features-container {
   margin-bottom: 175px;
   @media (min-width: 768px) {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
   }
   &__subtitle {
@@ -87,5 +87,11 @@
   }
   &__p {
     font-family: var(--archivo-font);
+  }
+}
+.feature-swiper {
+  @media (min-width: 768px) {
+    max-width: 900px;
+    margin: auto;
   }
 }

@@ -10,7 +10,7 @@
   padding-bottom: 70px;
   &__container {
     @media (min-width: 768px) {
-      max-width: 600px;
+      max-width: 900px;
       margin: auto;
     }
   }
@@ -24,7 +24,7 @@
   &__buttonsContainer {
     @include mixins.flexbox(column, nowrap, flex-start, 20px);
     @media (min-width: 768px) {
-        @include mixins.flexbox(row, nowrap, space-around, 60px);
+        @include mixins.flexbox(row, nowrap, flex-start, 60px);
     }
   }
 

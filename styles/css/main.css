@@ -411,7 +411,7 @@ body {
 }
 @media (min-width: 768px) {
   .features-container {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
   }
 }
@@ -499,6 +499,13 @@ body {
 }
 .feature__p {
   font-family: var(--archivo-font);
+}
+
+@media (min-width: 768px) {
+  .feature-swiper {
+    max-width: 900px;
+    margin: auto;
+  }
 }
 
 .h1 {
@@ -618,7 +625,7 @@ body {
 }
 @media (min-width: 768px) {
   .presentation__container {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
   }
 }
@@ -639,7 +646,7 @@ body {
   .presentation__buttonsContainer {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: flex-start;
     gap: 60px;
   }
 }
@@ -651,7 +658,7 @@ body {
 }
 @media (min-width: 768px) {
   .arrival__form {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
     display: flex;
     gap: 20px;
@@ -707,7 +714,7 @@ body {
 }
 @media (min-width: 768px) {
   .about__section1 .section1 {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
   }
 }
@@ -744,7 +751,7 @@ body {
 }
 @media (min-width: 768px) {
   .about__card {
-    width: 600px;
+    width: 900px;
   }
 }
 .about__card__imgTeam {
@@ -799,7 +806,7 @@ body {
 }
 @media (min-width: 768px) {
   .about__card__calendarIcon {
-    margin-left: 264px;
+    margin-left: 420px;
   }
 }
 .about__card--dark {
@@ -809,7 +816,7 @@ body {
 
 @media (min-width: 768px) {
   .rooms {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
   }
 }
@@ -862,7 +869,7 @@ body {
 }
 @media (min-width: 768px) {
   .video .section-video-container {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
   }
 }
@@ -895,7 +902,7 @@ body {
 }
 @media (min-width: 768px) {
   .menu .menu-container {
-    max-width: 600px;
+    max-width: 900px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -908,6 +915,12 @@ body {
   right: -25px;
   top: -100px;
 }
+@media (min-width: 768px) {
+  .menu__donutImg {
+    top: 0;
+    right: 0;
+  }
+}
 .menu__subtitle {
   margin-bottom: 20px;
 }
@@ -917,6 +930,12 @@ body {
 
 .food-swiper {
   margin-bottom: 110px;
+}
+@media (min-width: 768px) {
+  .food-swiper {
+    max-width: 600px;
+    overflow: hidden;
+  }
 }
 .food-swiper__button {
   top: calc(100% - 360px) !important;
