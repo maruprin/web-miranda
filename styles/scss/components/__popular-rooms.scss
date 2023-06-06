@@ -1,6 +1,12 @@
 .popular-rooms{
     background-color: var(--gris7-color);
     padding-bottom: 50px;
+    &__container{
+        @media (min-width: 768px) {
+            max-width: 900px;
+            margin: auto;
+          }
+    }
     &__subtitle{
         padding-top: 50px;
         margin-bottom: 20px;

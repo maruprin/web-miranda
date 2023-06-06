@@ -1618,6 +1618,13 @@ body {
   padding-bottom: 32px;
   margin-bottom: 32px;
 }
+@media (min-width: 768px) {
+  .offer {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
+}
 .offer__img {
   width: 100%;
   background-color: black;
@@ -1697,6 +1704,12 @@ body {
 .popular-rooms {
   background-color: var(--gris7-color);
   padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .popular-rooms__container {
+    max-width: 900px;
+    margin: auto;
+  }
 }
 .popular-rooms__subtitle {
   padding-top: 50px;

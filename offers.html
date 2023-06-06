@@ -36,7 +36,10 @@
       </div>
       <div class="header__right">
         <button class="header__icon header__icon--search"></button>
-        <a href="https://maruprin.github.io/dashboardMiranda/login" class="header__icon header__icon--login"></a>
+        <a
+          href="https://maruprin.github.io/dashboardMiranda/login"
+          class="header__icon header__icon--login"
+        ></a>
       </div>
       <div id="menu" class="header__menu">
         <nav class="header__nav nav">
@@ -59,12 +62,14 @@
     </header>
     <main>
       <section class="section presentation px-20">
-        <h2 class="h2 presentation__subtitle">The ultimate luxury</h2>
-        <h1 class="h1 presentation__title">Our Offers</h1>
-        <div class="breadcrumb">
-          <a href="/" class="a breadcrumb__a">Home</a
-          ><span class="breadcrumb__line">|</span
-          ><span class="breadcrumb__current">Offers</span>
+        <div class="presentation__container">
+          <h2 class="h2 presentation__subtitle">The ultimate luxury</h2>
+          <h1 class="h1 presentation__title">Our Offers</h1>
+          <div class="breadcrumb">
+            <a href="/" class="a breadcrumb__a">Home</a
+            ><span class="breadcrumb__line">|</span
+            ><span class="breadcrumb__current">Offers</span>
+          </div>
         </div>
       </section>
 
@@ -464,96 +469,99 @@
       </section>
 
       <section class="section popular-rooms">
-        <h2 class="h2 popular-rooms__subtitle px-20">Popular List</h2>
-        <h1 class="h1 popular-rooms__title px-20">Popular Rooms</h1>
-        <div class="button-container px-20">
-          <div class="swiper-button-prev swiper-button-prev--out-wide"></div>
-          <div class="swiper-button-next swiper-button-next--out-wide"></div>
-          <div class="popular-rooms__card">
-            <div class="swiper swiper-300px rooms-swiper">
-              <div class="swiper-wrapper">
-                <div
-                  class="swiper-slide swiper-slide__room"
-                  style="background-image: url('/assets/rooms/room.jpg')"
-                ></div>
-                <div
-                  class="swiper-slide swiper-slide__room"
-                  style="background-image: url('/assets/rooms/room2.jpg')"
-                ></div>
-                <div
-                  class="swiper-slide swiper-slide__room"
-                  style="background-image: url('/assets/rooms/room3.jpg')"
-                ></div>
-                <div
-                  class="swiper-slide swiper-slide__room"
-                  style="background-image: url('/assets/rooms/room4.jpg')"
-                ></div>
-                <div
-                  class="swiper-slide swiper-slide__room"
-                  style="background-image: url('/assets/rooms/room5.jpg')"
-                ></div>
-                <div
-                  class="swiper-slide swiper-slide__room"
-                  style="background-image: url('/assets/rooms/room6.jpg')"
-                ></div>
-                <div
-                  class="swiper-slide swiper-slide__room"
-                  style="background-image: url('/assets/rooms/room7.jpg')"
-                ></div>
+        <div class="popular-rooms__container">
+          <h2 class="h2 popular-rooms__subtitle px-20">Popular List</h2>
+          <h1 class="h1 popular-rooms__title px-20">Popular Rooms</h1>
+          <div class="button-container px-20">
+            <div class="swiper-button-prev swiper-button-prev--out-wide"></div>
+            <div class="swiper-button-next swiper-button-next--out-wide"></div>
+            <div class="popular-rooms__card">
+              <div class="swiper swiper-300px rooms-swiper">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide swiper-slide__room"
+                    style="background-image: url('/assets/rooms/room.jpg')"
+                  ></div>
+                  <div
+                    class="swiper-slide swiper-slide__room"
+                    style="background-image: url('/assets/rooms/room2.jpg')"
+                  ></div>
+                  <div
+                    class="swiper-slide swiper-slide__room"
+                    style="background-image: url('/assets/rooms/room3.jpg')"
+                  ></div>
+                  <div
+                    class="swiper-slide swiper-slide__room"
+                    style="background-image: url('/assets/rooms/room4.jpg')"
+                  ></div>
+                  <div
+                    class="swiper-slide swiper-slide__room"
+                    style="background-image: url('/assets/rooms/room5.jpg')"
+                  ></div>
+                  <div
+                    class="swiper-slide swiper-slide__room"
+                    style="background-image: url('/assets/rooms/room6.jpg')"
+                  ></div>
+                  <div
+                    class="swiper-slide swiper-slide__room"
+                    style="background-image: url('/assets/rooms/room7.jpg')"
+                  ></div>
+                </div>
               </div>
-            </div>
-            <div class="icon-bar icon-bar--bottom icon-bar-roomCard">
-              <img
-                src="/icons/icon-bar/bed.svg"
-                alt="bedIcon"
-                class="icon-bar__icon"
-              />
-              <img
-                src="/icons/icon-bar/wifi.svg"
-                alt="wifiIcon"
-                class="icon-bar__icon"
-              />
-              <img
-                src="/icons/icon-bar/car.svg"
-                alt="carIcon"
-                class="icon-bar__icon"
-              />
-              <img
-                src="/icons/icon-bar/ac.svg"
-                alt="acIcon"
-                class="icon-bar__icon"
-              />
-              <img
-                src="/icons/icon-bar/gym.svg"
-                alt="gymIcon"
-                class="icon-bar__icons"
-              />
-              <img
-                src="/icons/icon-bar/nosmoke.svg"
-                alt="nosmokeIcon"
-                class="icon-bar__icon"
-              />
-              <img
-                src="/icons/icon-bar/bar.svg"
-                alt="barIcon"
-                class="icon-bar__icon"
-              />
-            </div>
-            <h4 class="h4 room__title">Minimal duplex room</h4>
-            <p class="p room__text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore.
-            </p>
-            <div class="price price--booking">
-              <div>
-                <span class="price__amount price__amount--same-size">$345</span
-                ><span class="price__night price__night--same-size"
-                  >/Night</span
+              <div class="icon-bar icon-bar--bottom icon-bar-roomCard">
+                <img
+                  src="/icons/icon-bar/bed.svg"
+                  alt="bedIcon"
+                  class="icon-bar__icon"
+                />
+                <img
+                  src="/icons/icon-bar/wifi.svg"
+                  alt="wifiIcon"
+                  class="icon-bar__icon"
+                />
+                <img
+                  src="/icons/icon-bar/car.svg"
+                  alt="carIcon"
+                  class="icon-bar__icon"
+                />
+                <img
+                  src="/icons/icon-bar/ac.svg"
+                  alt="acIcon"
+                  class="icon-bar__icon"
+                />
+                <img
+                  src="/icons/icon-bar/gym.svg"
+                  alt="gymIcon"
+                  class="icon-bar__icons"
+                />
+                <img
+                  src="/icons/icon-bar/nosmoke.svg"
+                  alt="nosmokeIcon"
+                  class="icon-bar__icon"
+                />
+                <img
+                  src="/icons/icon-bar/bar.svg"
+                  alt="barIcon"
+                  class="icon-bar__icon"
+                />
+              </div>
+              <h4 class="h4 room__title">Minimal duplex room</h4>
+              <p class="p room__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <div class="price price--booking">
+                <div>
+                  <span class="price__amount price__amount--same-size"
+                    >$345</span
+                  ><span class="price__night price__night--same-size"
+                    >/Night</span
+                  >
+                </div>
+                <a href="room-details.html" class="room__booking-now"
+                  >Booking Now</a
                 >
               </div>
-              <a href="room-details.html" class="room__booking-now"
-                >Booking Now</a
-              >
             </div>
           </div>
         </div>

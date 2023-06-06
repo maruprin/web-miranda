@@ -2,6 +2,11 @@
   box-shadow: 0px 14px 24px rgba(184, 184, 184, 0.5);
   padding-bottom: 32px;
   margin-bottom: 32px;
+  @media (min-width: 768px) {
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 80px;
+  }
   &__img {
     width: 100%;
 
