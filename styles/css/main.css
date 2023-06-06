@@ -1381,6 +1381,13 @@ body {
 
 .facts {
   margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .facts {
+    flex-direction: row;
+  }
 }
 .facts .fact {
   padding: 25px 20px 28px;
@@ -1412,6 +1419,13 @@ body {
   width: 32px;
   height: 32px;
   margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .facts-container {
+    max-width: 900px;
+    margin: auto;
+  }
 }
 
 .room {
