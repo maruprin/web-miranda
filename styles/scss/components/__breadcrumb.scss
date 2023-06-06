@@ -1,25 +1,28 @@
-.breadcrumb{
-    font-family: var(--archivo-font);
-    width: fit-content;
-    background-color: white;
-    color: black;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 17px;
-    letter-spacing: -0.5px;
-    padding: 16px 24px;
-    position: absolute;
-    right: 20px;
-    bottom: 0;
-    &__a {
+.breadcrumb {
+  font-family: var(--archivo-font);
+  width: fit-content;
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: -0.5px;
+  padding: 16px 24px;
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  @media (min-width: 1200px) {
+    right: 300px;
+  }
+  &__a {
     display: inline;
-    }
+  }
 
-    &__line {
+  &__line {
     margin: 0 10px;
-    }
+  }
 
-    &__current {
+  &__current {
     color: var(--marron-color);
-    }
+  }
 }
