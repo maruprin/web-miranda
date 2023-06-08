@@ -30,7 +30,10 @@
       </div>
       <div class="header__right">
         <button class="header__icon header__icon--search"></button>
-        <a href="https://maruprin.github.io/dashboardMiranda/login" class="header__icon header__icon--login"></a>
+        <a
+          href="https://maruprin.github.io/dashboardMiranda/login"
+          class="header__icon header__icon--login"
+        ></a>
       </div>
       <div id="menu" class="header__menu">
         <nav class="header__nav nav">
@@ -53,45 +56,53 @@
     </header>
     <main>
       <section class="section presentation px-20">
-        <h2 class="h2 presentation__subtitle">The ultimate luxury</h2>
-        <h1 class="h1 presentation__title">Ultimate Room</h1>
-        <div class="breadcrumb">
-          <a href="/" class="a breadcrumb__a">Home</a
-          ><span class="breadcrumb__line">|</span
-          ><span class="breadcrumb__current">Contact</span>
+        <div class="presentation__container">
+          <h2 class="h2 presentation__subtitle">The ultimate luxury</h2>
+          <h1 class="h1 presentation__title">New Details</h1>
+          <div class="breadcrumb">
+            <a href="/" class="a breadcrumb__a">Home</a
+            ><span class="breadcrumb__line">|</span
+            ><span class="breadcrumb__current">Contact</span>
+          </div>
         </div>
       </section>
 
       <section class="section contactInfo px-20">
-        <div class="contactInfo__item">
-          <span class="contactInfo__number">01</span>
-          <img src="/icons/map.svg" alt="map" class="contactInfo__icon" />
-          <div>
-            <span class="contactInfo__item--title">Hotel Adress</span>
-            <span class="contactInfo__item--subtitle"
-              >19/A, Cirikon City hall Tower</span
-            >
-            <span class="contactInfo__item--subtitle">New York, NYC</span>
+        <div class="contactInfo__container">
+          <div class="contactInfo__item">
+            <span class="contactInfo__number">01</span>
+            <img src="/icons/map.svg" alt="map" class="contactInfo__icon" />
+            <div>
+              <span class="contactInfo__item--title">Hotel Adress</span>
+              <span class="contactInfo__item--subtitle"
+                >19/A, Cirikon City hall Tower</span
+              >
+              <span class="contactInfo__item--subtitle">New York, NYC</span>
+            </div>
           </div>
-        </div>
-        <div class="contactInfo__item">
-          <span class="contactInfo__number">02</span>
-          <img src="/icons/phone.svg" alt="phone" class="contactInfo__icon" />
-          <div>
-            <span class="contactInfo__item--title">Phone Number</span>
-            <span class="contactInfo__item--subtitle">+976 568 675 78 647</span>
-            <span class="contactInfo__item--subtitle">+876 766 867 56 745</span>
+          <div class="contactInfo__item">
+            <span class="contactInfo__number">02</span>
+            <img src="/icons/phone.svg" alt="phone" class="contactInfo__icon" />
+            <div>
+              <span class="contactInfo__item--title">Phone Number</span>
+              <span class="contactInfo__item--subtitle"
+                >+976 568 675 78 647</span
+              >
+              <span class="contactInfo__item--subtitle"
+                >+876 766 867 56 745</span
+              >
+            </div>
           </div>
-        </div>
-        <div class="contactInfo__item">
-          <span class="contactInfo__number">03</span>
-          <img src="/icons/mail.svg" alt="mail" class="contactInfo__icon" />
-          <div>
-            <span class="contactInfo__item--title">Email</span>
-            <span class="contactInfo__item--subtitle">info@webmail.com</span>
-            <span class="contactInfo__item--subtitle"
-              >jobs.webmail@mail.com</span
-            >
+          <div class="contactInfo__item">
+            <span class="contactInfo__number">03</span>
+            <img src="/icons/mail.svg" alt="mail" class="contactInfo__icon" />
+            <div>
+              <span class="contactInfo__item--title">Email</span>
+              <span class="contactInfo__item--subtitle">info@webmail.com</span>
+              <span class="contactInfo__item--subtitle"
+                >jobs.webmail@mail.com</span
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -128,7 +139,7 @@
 
       <section class="section px-20">
         <form class="contactForm">
-          <div class="contactForm__inputContainer">
+          <div class="contactForm__inputContainer fullName">
             <input
               type="text"
               id="fullName"
@@ -141,7 +152,7 @@
               class="contactForm__input--icon"
             />
           </div>
-          <div class="contactForm__inputContainer">
+          <div class="contactForm__inputContainer phone">
             <input
               type="tel"
               id="phone"
@@ -154,12 +165,12 @@
               class="contactForm__input--icon"
             />
           </div>
-          <div class="contactForm__inputContainer">
+          <div class="contactForm__inputContainer email">
             <input
               type="email"
               id="email"
               class="contactForm__input"
-              placeholder="Enter mail address"
+              placeholder="Enter your email address"
             />
             <img
               src="/icons/contact-form/mail.svg"
@@ -167,7 +178,7 @@
               class="contactForm__input--icon"
             />
           </div>
-          <div class="contactForm__inputContainer">
+          <div class="contactForm__inputContainer subject">
             <input
               type="text"
               id="subject"
@@ -180,7 +191,7 @@
               class="contactForm__input--icon"
             />
           </div>
-          <div class="contactForm__inputContainer">
+          <div class="contactForm__inputContainer message">
             <textarea
               id="message"
               class="contactForm__textarea"
@@ -193,7 +204,7 @@
               class="contactForm__input--icon"
             />
           </div>
-          <button class="buttonM contactForm__btn">Send</button>
+          <button class="buttonM contactForm__btn buttonGrid">Send</button>
         </form>
       </section>
     </main>

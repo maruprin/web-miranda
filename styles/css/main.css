@@ -4,6 +4,7 @@
   width: 80%;
   margin: 0 auto;
   margin-top: 100px;
+  max-width: 900px;
 }
 
 .custom-map-control-button {
@@ -1530,9 +1531,21 @@ body {
   color: var(--rosa-color);
 }
 
+.contactInfo__container {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+}
+@media (min-width: 768px) {
+  .contactInfo__container {
+    max-width: 900px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .contactInfo__item {
   padding: 52px 12px 57px;
-  margin-bottom: 47px;
   position: relative;
   display: flex;
   flex-flow: row nowrap;
@@ -1566,13 +1579,56 @@ body {
   right: 30px;
   z-index: -1;
 }
+@media (min-width: 768px) {
+  .contactInfo__number {
+    display: none;
+  }
+}
 .contactInfo__icon {
   width: 40px;
   height: 40px;
 }
 
+.contactForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "fullName" "phone" "email" "subject" "message" "button";
+}
+@media (min-width: 768px) {
+  .contactForm {
+    max-width: 900px;
+    margin: auto;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "fullName phone" "email subject" "message message" "button button";
+  }
+}
 .contactForm__inputContainer {
   position: relative;
+}
+.contactForm .fullName {
+  grid-area: fullName;
+}
+.contactForm .phone {
+  grid-area: phone;
+}
+.contactForm .email {
+  grid-area: email;
+}
+.contactForm .subject {
+  grid-area: subject;
+}
+.contactForm .message {
+  grid-area: message;
+}
+.contactForm .buttonGrid {
+  grid-area: button;
+}
+@media (min-width: 768px) {
+  .contactForm .buttonGrid {
+    max-width: 50%;
+  }
 }
 .contactForm__input {
   width: 100%;
